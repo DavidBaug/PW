@@ -1,0 +1,30 @@
+#login {
+  font-size: 10%;
+  float: right;
+  padding: 0% 5%;
+  text-align: center;
+  align-self: stretch;
+  margin: 0;
+}
+
+#logo {
+  float: left;
+  padding: 0% 5%;
+  width: 7%;
+  height: 7%;
+  margin: 0;
+}
+
+#titulo {
+  letter-spacing: 0.15em;
+  font-size: 225%;
+  padding: 0% 10%;
+  text-align: center;
+  margin: 0;
+}
+
+#cabezera{
+  align-items: center;
+  align-content: center;
+  padding: 2%;
+}
