@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda SYSTEM "agenda.dtd">
+<agenda>
+
+  <contactos><tipo>frecuentes</tipo>
+
+  <contacto>
+    <nombre>Emilio primo</nombre>
+    <apellidos></apellidos>
+    <numero>61111111</numero>
+    <email></email>
+  </contacto>
+
+  </contactos>
+
+  <contactos><tipo>trabajo</tipo>
+
+    <contacto>
+      <nombre>Juan</nombre>
+      <apellidos>Juanes Jonas</apellidos>
+      <numero>689999999</numero>
+      <email>jjj@ugr.es</email>
+    </contacto>
+
+    <contacto>
+      <nombre>Paco</nombre>
+      <apellidos>Pacares Paz</apellidos>
+      <numero>655555555</numero>
+      <email>ppp@ugr.es</email>
+    </contacto>
+
+  </contactos>
+
+  <contactos><tipo>personal</tipo>
+
+    <contacto>
+      <nombre>Juan cuñao</nombre>
+      <apellidos></apellidos>
+      <numero>62222222</numero>
+      <email></email>
+    </contacto>
+
+    <contacto>
+      <nombre>Emilio primo</nombre>
+      <apellidos></apellidos>
+      <numero>61111111</numero>
+      <email></email>
+    </contacto>
+
+  </contactos>
+
+
+</agenda>

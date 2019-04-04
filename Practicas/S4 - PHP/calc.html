@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+  </head>
+  <body>
+
+    <h2>Calculadora Básica</h2>
+
+    <form method="post" action="calculadora2.php">
+
+      <input type="number" name="operando1">
+      <br>
+      <br>
+      <input type="number" name="operando2">
+
+      <button type="button" name="suma" onclick="calcula("suma");">+</button>
+      <button type="button" name="resta" onclick="calcula("resta");">-</button>
+      <button type="button" name="multiplicacion" onclick="calcula("multiplicacion");">*</button>
+      <button type="button" name="division" onclick="calcula("division");">/</button>
+
+      <button type="reset" name="reset">Restablecer</button>
+
+    </form>
+
+    <p>Resultado: </p>
+
+  </body>
+</html>

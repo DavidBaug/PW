@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Congreso</title>
+  </head>
+  <body>
+
+    <header>
+      <h1><a href="congreso.html">Congreso</a></h1>
+      <h3>15 de Mayo en <address>Palacio de Congresos, Granada</address></h3>
+
+      <nav>
+        <section>
+          <h4><a href="#inf">Info</a></h4>
+        </section>
+
+        <section>
+          <h4><a href="#loca">Localizacion</a></h4>
+        </section>
+
+        <section>
+          <h4><a href="#form">Formulario de inscripción</a></h4>
+        </section>
+
+      </nav>
+
+    </header>
+
+<hr>
+
+<h2 id="inf">Info</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec nisl et orci dapibus blandit. In posuere elit vel nunc commodo efficitur. Morbi ullamcorper eget neque sit amet aliquet. Curabitur sed orci in metus rhoncus sodales. Fusce eu aliquam nulla, a consectetur neque. Aenean gravida diam odio, et suscipit ex varius ut. Sed nec tincidunt diam. Nam condimentum diam nunc, vel maximus est varius et. Nulla congue leo tortor, et euismod sapien dignissim vitae. Nam leo tortor, tempus at ligula et, pretium consectetur diam. Sed a leo finibus, interdum quam eu, placerat diam.</p>
+
+<h2 id="precio">Precio</h2>
+
+<table border="1">
+  <caption>Precios asistentes</caption>
+  <thead>
+
+    <tr>
+      <th></th>
+      <th>Registro temprano</th>
+      <th>Registro tardío</th>
+      <th>Durante congreso</th>
+    </tr>
+
+    <tr>
+      <th>Estudiantes</th>
+      <th>10€</th>
+      <th>15€</th>
+      <th>20€</th>
+    </tr>
+
+    <tr>
+      <th>Profesionales</th>
+      <th>20€</th>
+      <th>25€</th>
+      <th>30€</th>
+    </tr>
+
+
+  </thead>
+</table>
+
+<section>
+  <h2 id="form">Formulario inscripción</h2>
+
+  <form action="index.html" method="post" autocomplete="on" name="formulario_inscripcion" >
+
+    <fieldset>
+      <legend><strong>Datos personales</strong></legend>
+
+      <label for="nombre">Nombre:</label>
+      <input   type   =   "text"   id   =   "nombre"   name="nombre"   value   =   "" required/>
+
+      <label for="apellidos">Apellidos:</label>
+      <input   type   =   "text"   id   =   "apellidos"   name="apellidos"   value   =   "" required/>
+
+      <br><br>
+
+      <label for="mail">Correo electrónico:</label>
+      <input type="email" id="mail" name="mail" value="" required />
+
+      <br><br>
+
+      <label for="tlf">Número de teléfono:</label>
+      <input type="tel" name="tlf" value="" maxlength="9" required/>
+
+      <br><br>
+
+      <label for="fecha_nac">Fecha de nacimiento:</label>
+      <input type="date" name="fecha_nac" value="" required/>
+
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Datos congreso</strong></legend>
+
+      <label for="num_acompaniantes">Número de acompañantes:</label>
+      <input type="number" name="num_acompaniantes" value="0" min="0" max="4" required>
+
+      <br>   <br>
+
+      <label for="primera">¿Es la primera vez que asistes al congreso?:</label>
+      <input type="radio" name="primera" value="si" checked required> Si
+      <input type="radio" name="primera" value="no" required> No
+
+      <br><br>
+
+      <label for="conociste">¿Cómo conociste el evento?:</label>
+      <textarea name="conociste" rows="7" cols="50"></textarea>
+
+      <br><br>
+
+      <input type="submit" name="enviar" value="Enviar">
+      <input type="reset" name="restablecer" value="Restablecer">
+
+    </fieldset>
+
+
+  </form>
+
+</section>
+
+
+<br><br>
+
+    <aside>
+      Contacto:
+        <a href="mailto:joe@example.com?subject=feedback">Email</a>
+        <a href="Twitter.com">Twitter</a>
+
+    </aside>
+
+
+
+<hr>
+    <footer><h3>Organiza:</h3>
+
+      <ul>
+        <li>Google</li>
+        <li>UGR</li>
+        <li>OSL</li>
+      </ul>
+
+    </footer>
+
+  </body>
+</html>
