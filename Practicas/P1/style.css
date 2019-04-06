@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #log{
+=======
+#registro{
+>>>>>>> master
   float: right;
   padding: 0% 5%;
   text-align: center;
@@ -32,6 +36,11 @@
   align-content: stretch;
   margin: 1%;
   padding: 2% 5% 2%;
+}
+
+#user {
+  font-weight: bold;
+
 }
 
 #user {
