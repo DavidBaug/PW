@@ -4,23 +4,30 @@
     <meta charset="utf-8">
     <title>Booksplat</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
 
     <header id="cabezera">
-        <form id="login" method="post">
-          <input type="text" name="username" value="" placeholder="Usuario">
-          <br><br>
-          <input type="password" name="password" value="" placeholder="Contraseña">
-          <br><br>
-          <button type="submit" name="login">Acceder</button>
-          <br><br>
-          <button type="submit" name="register">Registrarse</button>
-        </form>
-        <a href="index.html"><img  id="logo" src="images/libro_logo.jpg"></a>
-        <a href="index.html"><p  id="titulo">BOOKSPLAT</p></a>
+        <section id="log">
+          <form id="acceso" method="post">
+            <input type="text" name="username" value="" placeholder="Usuario">
+            <br><br>
+            <input type="password" name="password" value="" placeholder="Contraseña">
+            <br><br>
+            <button type="submit" name="login" formaction="mislibros1.html">Acceder</button>
+          </form>
+
+          <p>Si no tienes cuenta puedes registrarte <a href="registro.html">aquí</a></p>
+        </section>
+
+
+        <a href="mislibros.html"><img  id="logo" src="images/libro_logo.jpg"></a>
+        <a href="mislibros.html"><p  id="titulo">BOOKSPLAT</p></a>
     </header>
 
     <hr>

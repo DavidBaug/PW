@@ -1,10 +1,13 @@
-#login {
-  font-size: 10%;
+#log{
   float: right;
   padding: 0% 5%;
   text-align: center;
   align-self: stretch;
   margin: 0;
+}
+
+#acceso{
+  font-size: 20%;
 }
 
 #logo {
@@ -24,7 +27,14 @@
 }
 
 #cabezera{
-  align-items: center;
-  align-content: center;
-  padding: 2%;
+  background-color: grey;
+  align-items: stretch;
+  align-content: stretch;
+  margin: 1%;
+  padding: 2% 5% 2%;
+}
+
+#user {
+  font-weight: bold;
+
 }
