@@ -1,5 +1,4 @@
-#login {
-  font-size: 10%;
+#registro{
   float: right;
   padding: 0% 5%;
   text-align: center;
@@ -27,4 +26,9 @@
   align-items: center;
   align-content: center;
   padding: 2%;
+}
+
+#user {
+  font-weight: bold;
+
 }
