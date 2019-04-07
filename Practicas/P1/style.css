@@ -1,49 +1,32 @@
-<<<<<<< HEAD
-#log{
-=======
-#registro{
->>>>>>> master
-  float: right;
-  padding: 0% 5%;
-  text-align: center;
-  align-self: stretch;
-  margin: 0;
-}
-
-#acceso{
-  font-size: 20%;
-}
-
 #logo {
   float: left;
-  padding: 0% 5%;
-  width: 7%;
-  height: 7%;
-  margin: 0;
+  width: 5%;
+  height: 5%;
+  size: 12;
 }
 
-#titulo {
-  letter-spacing: 0.15em;
-  font-size: 225%;
-  padding: 0% 10%;
+#titulo{
   text-align: center;
-  margin: 0;
+  align-items: center;
+  font-size: 200%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#login{
+  float: right;
+
+  text-align: center;
 }
 
 #cabezera{
-  background-color: grey;
-  align-items: stretch;
-  align-content: stretch;
-  margin: 1%;
-  padding: 2% 5% 2%;
+  align-items: center;
 }
 
-#user {
-  font-weight: bold;
 
+#user{
+  font-weight:
+  
 }
 
-#user {
-  font-weight: bold;
-
-}
+/* -------------------------------------------------------------------------- */
