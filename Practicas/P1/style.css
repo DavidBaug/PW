@@ -15,18 +15,42 @@
 
 #login{
   float: right;
-
   text-align: center;
+  font-size-adjust: auto;
 }
 
 #cabezera{
   align-items: center;
+  margin: 0%;
+  width: -webkit-fill-available;
 }
 
 
 #user{
   font-weight:
-  
+
 }
 
 /* -------------------------------------------------------------------------- */
+
+#contacto{
+  float: left;
+  text-align: right;
+}
+
+#memoria{
+  float: right;
+  text-align: left;
+}
+
+#pie {
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  width: -webkit-fill-available;
+  /* width: 50%; */
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: 1%;
+}
