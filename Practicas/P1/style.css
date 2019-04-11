@@ -1,8 +1,8 @@
 #logo {
   float: left;
-  width: 100px;
-  height: 100px;
-  size: 12;
+  width: 5%;
+  height: -webkit-fill-available;
+  padding: 0% 5%;
 }
 
 #titulo{
@@ -16,16 +16,22 @@
 #login{
   float: right;
   text-align: center;
-  font-size-adjust: auto;
+  padding: 0% 2%;
+  height: -webkit-fill-available;
+  width: auto;
+  margin: 1%;
 }
 
 #cabezera{
+  position: absolute;
+  top: 0;
+  left: 0;
   align-items: center;
   margin: 0%;
-  border: 0%;
-  height: 5%;
-  width: -webkit-fill-available;
-  background-color: white;
+  height: 100px;
+  width: 100%;
+  background-color: grey;
+  padding: 0%;
 }
 
 #cabezera a:hover{
@@ -172,7 +178,21 @@ span.psw {
   }
 }
 
+/* -------------------------------------------------------------------------- */
 
+#imagen_relacionada {
+  float: left;
+  margin: 0%;
+  border: 1%;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  width: 50%;
+}
+
+#imagen_relacionada img{
+  width: 100%;
+
+}
 
 
 /* -------------------------------------------------------------------------- */
@@ -190,11 +210,13 @@ span.psw {
 #pie {
   position: absolute;
   bottom: 0;
+  left: 0;
   align-items: center;
   width: -webkit-fill-available;
-  /* width: 50%; */
   text-align: center;
-  margin-left: 40%;
-  margin-right: 40%;
-  margin-bottom: 1%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 0%;
+  padding: 1% 35%;
+  background-color: grey;
 }
