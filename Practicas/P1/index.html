@@ -14,55 +14,24 @@
   <body>
 
     <header id="cabezera">
-        <section id="login">
-          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-          <div id="id01" class="modal">
-
-            <form class="modal-content animate">
-                    <div class="imgcontainer">
-                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-
-                    </div>
-
-                    <div class="container">
-                      <label for="uname"><b>Username</b></label>
-                      <input type="text" placeholder="Enter Username" name="uname">
-
-                      <label for="psw"><b>Password</b></label>
-                      <input type="password" placeholder="Enter Password" name="psw">
-
-                      <button type="submit" formaction="index2.html">Login</button>
-
-                    </div>
-
-                    <div class="container" style="background-color:#f1f1f1">
-                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                    </div>
-                  </form>
-                </div>
-
-                <script>
-                // Get the modal
-                var modal = document.getElementById('id01');
-
-                // When the user clicks anywhere outside of the modal, close it
-                window.onclick = function(event) {
-                    if (event.target == modal) {
-                        modal.style.display = "none";
-                    }
-                }
-                </script>
-
-          <button onclick="registro.html" style="width:auto;">Registro</button>
-        </section>
+      <section id="login">
+        <form method="post">
+          <input class="items" type="text" name="username" value="" placeholder="Usuario">
+          <br>
+          <input class="items" type="password" name="password" value="" placeholder="Contraseña">
+          <br>
+          <button class="items" type="submit" name="login" formaction="index2.html">Acceder</button>
+          <br>
+          <p class="items">Si no tienes cuenta puedes registrarte <a href="registro.html">aquí</a></p>
+        </form>
+      </section>
 
         <section>
           <a href="index.html"><img id="logo" src="images/libro_logo.png"></a>
         </section>
 
         <section id="titulo">
-            <a href="index.html"><p>BOOKSPLAT</p></a>
+            <a href="index.html"><h1>BOOKSPLAT</h1></a>
         </section>
 
 
@@ -73,29 +42,30 @@
       <img src="images/libros.jpg" alt="">
     </section>
 
+    <section id="libros">
 
-
-
-
-
-
-
-
-
-
+      <section class="item">
+        <h4 class="titulo">Libro 1</h4>
+        <img class="portada"src="images/portada.jpg" alt="">
+        <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque,
+          felis sed iaculis hendrerit, libero nibh iaculis elit, et lacinia metus purus quis augue. Mauris varius lectus
+          risus, a interdum ex auctor et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+          Curae; Morbi ut fringilla purus. Maecenas finibus dignissim dictum. In hac habitasse platea dictumst. Proin a dui
+          faucibus, congue diam ac, condimentum mi. In hac habitasse platea dictumst. Nam semper justo vitae purus accumsan,
+          quis sollicitudin mauris congue. Suspendisse rutrum ex sit amet justo venenatis ullamcorper. Donec porttitor turpis
+          sit amet placerat condimentum. Etiam dictum, mauris ultricies blandit gravida, elit justo tempus turpis, vel tincidunt
+          nisl velit sit amet justo.</p>
+        <p class="autor">asdasd</p>
+      </section>
+    </section>
 
 
 
     <footer id="pie">
-
-      <section id="contacto">
-        <p>Creado por asdasdasd</p>
+      <section>
+        <p id="contacto">Creado por asdasdasd</p>
+        <a id="pdf" href="memoria.pdf"><p>Cómo se hizo</p></a>
       </section>
-
-      <section id="memoria">
-        <a href="memoria.pdf"><p>Cómo se hizo</p></a>
-      </section>
-
     </footer>
 
 
