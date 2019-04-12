@@ -1,1 +1,1 @@
-{\rtf1}
+Memoria práctica 1 PW
