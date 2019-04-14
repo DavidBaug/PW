@@ -18,6 +18,14 @@ body {
   padding: 1% 20%;
 }
 
+#login1{
+  float: right;
+  text-align: center;
+  width: 20%;
+  padding: inherit;
+  margin: inherit;
+}
+
 #login{
   float: right;
   text-align: center;
@@ -107,7 +115,7 @@ body {
   font-size: 500%;
 }
 
-#libros .a:*{
+#libros .a{
   text-decoration: none;
   color: pink;
 }
