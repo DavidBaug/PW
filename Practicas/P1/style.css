@@ -4,6 +4,15 @@ body {
   width: -webkit-fill-available;
 }
 
+a:-webkit-any-link {
+  text-decoration: none;
+  color: lightseagreen;
+}
+
+a:visited{
+  color: black;
+}
+
 #logo {
   float: left;
   width: 5%;
@@ -52,7 +61,7 @@ body {
   margin: 0%;
   height: 100px;
   width: -webkit-fill-available;
-  background-color: pink;
+  background-color: beige;
   padding: 1%;
 }
 
