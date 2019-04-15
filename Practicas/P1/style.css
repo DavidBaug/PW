@@ -1,5 +1,7 @@
 body {
+  height: -webkit-fill-available;
   margin: 0;
+  width: -webkit-fill-available;
 }
 
 #logo {
@@ -76,11 +78,25 @@ body {
 
 /* -------------------------------------------------------------------------- */
 
+#cuerpo{
+    position: fixed;
+}
+
+section .flechas{
+
+    font-size: -webkit-xxx-large;
+    text-decoration: none;
+    color: black;
+
+}
+
 #imagen_relacionada {
+  height: fit-content;
   float: left;
   margin: 0%;
   align-items: stretch;
   width: 50%;
+  object-fit: cover;
 }
 
 #imagen_relacionada img{
@@ -104,16 +120,16 @@ body {
 }
 
 #libros .lista{
-  overflow-y: : scroll;
-
-
+  padding: inherit;
+  margin: inherit;
+  position: relative;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  overflow: scroll;
+  padding-bottom: 28%;
 }
 
-#libros .flechas{
-  width: 100%;
-  text-align: center;
-  font-size: 500%;
-}
+
 
 #libros .a{
   text-decoration: none;
@@ -161,11 +177,15 @@ body {
 #pdf {display:inline-block;}
 
 #pie {
-  bottom: 0;
+  left: 0;
+  bottom: 0px;
+  position: fixed;
   display: inline-block;
   align-items: center;
   width: -webkit-fill-available;
   text-align: center;
   background-color: grey;
   float: left;
+  /* height: -webkit-fill-available; */
+  /* padding: 1%; */
 }
