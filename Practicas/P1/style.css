@@ -6,11 +6,11 @@ body {
 
 a:-webkit-any-link {
   text-decoration: none;
-  color: lightseagreen;
+  color: darkred;
 }
 
 a:visited{
-  color: black;
+  color: red;
 }
 
 #logo {
@@ -156,6 +156,8 @@ section .flechas{
   padding: inherit;
   text-align: center;
   width: 70%;
+  font-weight: bold;
+  font-size: larger;
 }
 
 #libros .portada {
@@ -197,4 +199,176 @@ section .flechas{
   float: left;
   /* height: -webkit-fill-available; */
   /* padding: 1%; */
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+#navbar{
+  display: inline-block;
+  text-align: center;
+  width: -webkit-fill-available;
+  padding: 1%;
+  margin: inherit;
+  background-color: pink;
+}
+
+#navbar .item{
+  padding: 1%;
+}
+
+#navbar .active{
+  font-weight: bold;
+  padding: 1%;
+}
+
+
+
+#libros_leidos{
+  float: left;
+  margin: 0%;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+#libros_leidos .item{
+  margin: 1%;
+  padding: 1%;
+  /* height: 78%; */
+  display: inline-block;
+}
+
+#libros_leidos .lista{
+  padding: inherit;
+  margin: inherit;
+  position: relative;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  overflow: scroll;
+  padding-bottom: 28%;
+}
+
+
+
+#libros_leidos .a{
+  text-decoration: none;
+  color: pink;
+}
+
+#libros_leidos .seccion{
+  text-align: center;
+  padding: 1%;
+}
+
+#libros_leidos .titulo{
+  float: right;
+  margin: inherit;
+  padding: inherit;
+  text-align: center;
+  width: 70%;
+  font-weight: bold;
+  font-size: larger;
+}
+
+#libros_leidos .portada {
+  float: left;
+  width: 20%;
+  margin: inherit;
+  padding: inherit;
+}
+
+#libros_leidos .descripcion {
+  float: right;
+  width: 70%;
+  margin: inherit;
+  padding: inherit;
+}
+
+#libros_leidos .autor {
+  float: right;
+  width: 70%;
+  margin: inherit;
+  padding: inherit;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+#ultimos_subidos{
+  float: right;
+  margin: 0%;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+#ultimos_subidos .item{
+  margin: 1%;
+  padding: 1%;
+  /* height: 78%; */
+  display: inline-block;
+}
+
+#ultimos_subidos .lista{
+  padding: inherit;
+  margin: inherit;
+  position: relative;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  overflow: scroll;
+  padding-bottom: 28%;
+}
+
+
+
+#ultimos_subidos .a{
+  text-decoration: none;
+  color: pink;
+}
+
+#ultimos_subidos .seccion{
+  text-align: center;
+  padding: 1%;
+}
+
+#ultimos_subidos .titulo{
+  float: right;
+  margin: inherit;
+  padding: inherit;
+  text-align: center;
+  width: 70%;
+  font-weight: bold;
+  font-size: larger;
+}
+
+#ultimos_subidos .portada {
+  float: left;
+  width: 20%;
+  margin: inherit;
+  padding: inherit;
+}
+
+#ultimos_subidos .descripcion {
+  float: right;
+  width: 70%;
+  margin: inherit;
+  padding: inherit;
+}
+
+#ultimos_subidos .autor {
+  float: right;
+  width: 70%;
+  margin: inherit;
+  padding: inherit;
+  text-align: center;
+  font-weight: bold;
 }
