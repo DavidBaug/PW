@@ -105,7 +105,7 @@ section .flechas{
   margin: 0%;
   align-items: stretch;
   width: 50%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 #imagen_relacionada img{
@@ -162,9 +162,11 @@ section .flechas{
 
 #libros .portada {
   float: left;
-  width: 20%;
+  width: 180px;
+  height: 270px;
   margin: inherit;
   padding: inherit;
+  object-fit: fill;
 }
 
 #libros .descripcion {
@@ -274,6 +276,8 @@ section .flechas{
 #libros_leidos .portada {
   float: left;
   width: 180px;
+  height: 270px;
+  object-fit: fill;
   margin: inherit;
   padding: inherit;
 }
