@@ -436,10 +436,11 @@ section .flechas{
 
 
     #navbar.responsive {position: relative;}
-    #navbar.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+    #navbar .menu {
+      position: relative;
+      float: right;
+      padding: 2% 1%;
+      margin: 1%;
     }
     #navbar.responsive a {
       float: none;
@@ -448,5 +449,21 @@ section .flechas{
     }
 
 
+
+    #navbar .menu label span {
+    }
+
+
+
+    #navbar .menu input:checked + span {
+    }
+
+    #navbar input#toggle {
+        display: none;
+    }
+
+    input#toggle:checked ~ .menu {
+
+        }
 
 }
