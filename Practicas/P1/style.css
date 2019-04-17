@@ -13,39 +13,39 @@ a:visited{
   color: red;
 }
 
-#logo {
+#cabezera .logo {
   float: left;
   width: 100px;
   height: -webkit-fill-available;
   padding: 0% 5%;
 }
 
-#titulo{
+#cabezera .titulo{
   text-align: center;
   align-items: center;
   font-size: 100%;
   padding: 1% 25%;
 }
 
-#login1{
+#cabezera .login1{
   float: right;
   text-align: center;
   width: 15%;
   padding: 1%;
 }
 
-#login{
+#cabezera .login{
   float: right;
   text-align: center;
   width: 20%;
 
 }
 
-#login button{
+#cabezera .login button{
   width: auto;
 }
 
-#login .items{
+#cabezera .login .items{
   align-items: center;
   text-align: center;
   margin: 1%;
@@ -244,8 +244,8 @@ section .flechas{
   position: relative;
   width: -webkit-fill-available;
   height: -webkit-fill-available;
-  overflow: scroll;
-  padding-bottom: 28%;
+  overflow-y: auto;
+  padding-bottom: 35%;
 }
 
 
@@ -369,4 +369,32 @@ section .flechas{
   bottom: 32%;
   padding: 1% 1%;
   background: blanchedalmond;
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  #cabezera{
+    height: 100px;
+  }
+
+  #cabezera .logo {
+    float: right;
+    width: 100px;
+  }
+
+  #cabezera .titulo {
+    float: left;
+    padding: 1% 10%;
+    margin: 1%;
+  }
+
+  #cabezera .login{
+    display: none;
+  }
+
+  #cabezera .login1{
+    display: none;
+  }
 }
