@@ -2,6 +2,8 @@ body {
   height: -webkit-fill-available;
   margin: 0;
   width: -webkit-fill-available;
+  overflow: hidden;
+
 }
 
 a:-webkit-any-link {
