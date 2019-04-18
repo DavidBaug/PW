@@ -401,6 +401,9 @@ section .flechas{
 
 }
 
+#navbar .menu{
+  display: none;
+}
 
 @media screen and (max-width: 600px) {
 
@@ -435,12 +438,14 @@ section .flechas{
     }
 
 
+
     #navbar.responsive {position: relative;}
     #navbar .menu {
       position: relative;
       float: right;
       padding: 2% 1%;
       margin: 1%;
+      display: flex;
     }
     #navbar.responsive a {
       float: none;
