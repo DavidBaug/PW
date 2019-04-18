@@ -85,7 +85,6 @@ a:visited{
 /* -------------------------------------------------------------------------- */
 
 #cuerpo{
-    position: fixed;
 }
 
 section .flechas{
@@ -214,6 +213,7 @@ section .flechas{
   float: left;
   /* height: -webkit-fill-available; */
   /* padding: 1%; */
+  z-index: 30;
 }
 
 
@@ -426,9 +426,33 @@ section .flechas{
 
   /* Body */
 
+  #ultimos_subidos {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background: aliceblue;
+  }
+
+  #ultimos_subidos .altalibro {
+    width: 100%;
+  }
+
     #libros_leidos {
+      position: fixed;
       width: 100%;
+      z-index: 20;
+      background: aliceblue;
+      overflow-y: auto;
     }
+
+    #libros_leidos .lista{
+      padding-bottom: 50%;
+    }
+
+    #ultimos_subidos .lista{
+      padding-bottom: 53%;
+    }
+
 
     #libros_leidos .portada{
       width: 90px;
@@ -443,13 +467,16 @@ section .flechas{
 
 /*  */
 
+
     #libros_leidos .box {
       visibility: visible;
-      z-index: 20;
     }
-    #trigger:checked + #libros_leidos .box {
+
+    #trigger:checked + #libros_leidos{
       visibility: hidden;
+      z-index: 0;
     }
+
     #trigger {
       width: 100%;
       display: none;
