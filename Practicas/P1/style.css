@@ -250,9 +250,8 @@ section .flechas{
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  padding: 2%;
+  font-weight: 600;
 }
 
 #navbar a:hover {
@@ -468,7 +467,9 @@ section .flechas{
 
 
 /*  */
-
+    #secciones .item1 {
+      color: green;
+    }
 
     #libros_leidos .box {
       visibility: visible;
@@ -477,7 +478,9 @@ section .flechas{
     #trigger:checked + #libros_leidos{
       visibility: hidden;
       z-index: 0;
+
     }
+
 
     #trigger {
       width: 100%;
@@ -517,8 +520,8 @@ section .flechas{
   #navbar .menu {
     position: relative;
     float: right;
-    padding: 2% 1%;
-    margin: 1%;
+    padding: 2%;
+    margin: 0%;
     display: flex;
   }
   #navbar.responsive a {
