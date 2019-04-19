@@ -467,9 +467,6 @@ section .flechas{
 
 
 /*  */
-    #secciones .item1 {
-      color: green;
-    }
 
     #libros_leidos .box {
       visibility: visible;
