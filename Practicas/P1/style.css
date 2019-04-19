@@ -251,7 +251,7 @@ section .flechas{
   color: #f2f2f2;
   text-align: center;
   font-weight: 600;
-  padding: 2%;
+  padding: 1%;
 }
 
 #navbar a:hover {
@@ -516,13 +516,32 @@ section .flechas{
   #navbar a:not(:first-child) {display: none;}
 
   #navbar .menu {
-    position: relative;
-    float: right;
+    position: absolute;
     padding: 2%;
     margin: 0%;
     display: flex;
+    z-index: 20;
+    right: 0;
   }
 
+  #navbar a {
+
+padding: 2%;
+
+width: 100%;
+
+cursor: default;
+
+}
+
+  #navbar a:hover{
+    background: #4CAF50;
+    color: white;
+  }
+
+  #navbar a:active{
+
+  }
 
   #navbar .menu label span {
   }
