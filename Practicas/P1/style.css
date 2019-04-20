@@ -406,7 +406,7 @@ section .flechas{
   background: blanchedalmond;
 }
 
-#navbar .open{
+#navbar .span2{
   display: none;
 }
 
@@ -506,12 +506,12 @@ section .flechas{
     display: none;
   }
 
-  #navbar a:not(.active) {
+  #navbar .menu a:not(.active) {
     display: none;
   }
 
-  #navbar .open {
-    position: absolute;
+  #navbar .span2 {
+    position: fixed;
     padding: 2%;
     margin: 0%;
     display: flex;
@@ -525,11 +525,12 @@ section .flechas{
     cursor: default;
   }
 
-  #navbar .open{
+  #navbar .span2{
     cursor: pointer;
   }
 
   #navbar .close{
+    display: block;
     cursor: pointer;
   }
 
@@ -538,12 +539,27 @@ section .flechas{
     color: white;
   }
 
-  .open:focus ~ .hidden_menu {
+  #navbar .hidden_menu{
     display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
-  .close:focus ~ .hidden_menu {
-    display: block;
+
+
+  .alert{
+    display: none;
+    padding: 0;
+    list-style: none;
+    margin: 0;
   }
+
+.span2:focus ~ .alert {
+  display: block;
+}
+.span2:focus ~ .menu {
+  display: none;
+}
 
 
 }
