@@ -219,30 +219,22 @@ section .flechas{
 }
 
 
-/* -------------------------------------------------------------------------- */
-
-/* #navbar{
-  display: inline-block;
-  text-align: center;
-  width: -webkit-fill-available;
-  padding: 1%;
-  margin: inherit;
-  background-color: pink;
-}
-
-#navbar .item{
-  padding: 1%;
-}
-
-#navbar .active{
-  font-weight: bold;
-  padding: 1%;
-} */
-
-
 #navbar {
   overflow: hidden;
   background-color: #333;
+}
+
+#navbar .menu{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar .hidden_menu{
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #navbar a {
@@ -251,7 +243,7 @@ section .flechas{
   color: #f2f2f2;
   text-align: center;
   font-weight: 600;
-  padding: 1%;
+  padding: 12px;
 }
 
 #navbar a:hover {
@@ -414,7 +406,11 @@ section .flechas{
   background: blanchedalmond;
 }
 
-#navbar .menu{
+#navbar .open{
+  display: none;
+}
+
+#navbar .close{
   display: none;
 }
 
@@ -510,9 +506,11 @@ section .flechas{
     display: none;
   }
 
-  #navbar a:not(:first-child) {display: none;}
+  #navbar a:not(.active) {
+    display: none;
+  }
 
-  #navbar .menu {
+  #navbar .open {
     position: absolute;
     padding: 2%;
     margin: 0%;
@@ -522,41 +520,30 @@ section .flechas{
   }
 
   #navbar a {
+    padding: 12px;
+    width: 100%;
+    cursor: default;
+  }
 
-padding: 2%;
+  #navbar .open{
+    cursor: pointer;
+  }
 
-width: 100%;
-
-cursor: default;
-
-}
+  #navbar .close{
+    cursor: pointer;
+  }
 
   #navbar a:hover{
     background: #4CAF50;
     color: white;
   }
 
-  #navbar a:active{
-
+  .open:focus ~ .hidden_menu {
+    display: none;
   }
-
-  #navbar .menu label span {
+  .close:focus ~ .hidden_menu {
+    display: block;
   }
-
-
-
-  #navbar .menu input:checked + span {
-  }
-
-  #navbar input#toggle {
-      display: none;
-  }
-
-  input#toggle:checked ~ .menu {
-
-      }
-
-
 
 
 }

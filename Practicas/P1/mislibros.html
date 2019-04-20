@@ -28,15 +28,27 @@
     </header>
 
     <nav id="navbar">
-      <a class="active" href="#">Mis libros</a>
-      <a href="#">Foro</a>
-      <a href="#">Mis datos</a>
-      <a href="#">Mis recomendaciones</a>
-      <div class="menu">
-         <label>
-            <input type="checkbox" value="1" style="display:none;"><span><i style="color:white;"class="fa fa-bars"></i></span>
-         </label>
-      </div>
+      <ul class="hidden_menu">
+        <li><a class="active" href="#">Mis libros</a></li>
+        <li><a href="#">Foro</a></li>
+        <li><a href="#">Mis datos</a></li>
+        <li><a href="#">Mis recomendaciones</a></li>
+      </ul>
+      <!-- <div class="button">
+        <input id="toggle" checked type="checkbox" value="1" style="display:none;"><i style="color:white;"class="fa fa-bars"></i>
+        <label for="toggle"></label>
+      </div> -->
+      <span class="open"><i style="color:white;"class="fa fa-bars"></i></span>
+      <span class="close">
+        <p>x</p>
+      </span>
+
+      <ul class="menu">
+        <li><a class="active" href="#">Mis libros</a></li>
+        <li><a href="#">Foro</a></li>
+        <li><a href="#">Mis datos</a></li>
+        <li><a href="#">Mis recomendaciones</a></li>
+      </ul>
     </nav>
 
 
