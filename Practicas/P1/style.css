@@ -631,3 +631,77 @@ section .flechas{
 #libro .opinion p:first-of-type{
   font-weight: bold;
 }
+
+
+
+@media screen and (max-width: 600px) {
+  #libro {
+    width: 100%;
+    margin: 0;
+    height: -webkit-fill-available;
+    padding-bottom: 40%;
+  }
+
+  #libro .portada{
+
+width: 30%;
+
+padding: 2% 5%;
+  }
+
+  #libro .bot_info{
+
+padding: 3%;
+  }
+
+  #libro .valoracion{
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  #libros .lista{
+
+padding-bottom: 50%;
+  }
+
+  #imagen_relacionada{
+    display: none;
+  }
+
+  #libros{
+    width: 100%;
+  }
+
+  #libros .portada{
+
+width: 25%;
+
+height: auto;
+
+}
+
+  #libros .titulo{
+
+width: 50%;
+
+}
+
+  #libros .descripcion {width: 60%;}
+
+  #libros .autor {
+    float: left;
+    width: 25%;
+    padding: 3% 0%;
+    text-align: center;
+}
+
+
+}
