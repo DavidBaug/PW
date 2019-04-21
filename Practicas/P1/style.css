@@ -578,6 +578,7 @@ section .flechas{
 #libro{
   margin: 1% 15%;
   display: block;
+  overflow-y: scroll;
 }
 
 #libro .top_info{
