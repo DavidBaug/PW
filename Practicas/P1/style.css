@@ -253,6 +253,15 @@ section .flechas{
   color: white;
 }
 
+.exit {
+  background-color: red;
+  color: white;
+}
+
+.exit:hover{
+  background-color: black;
+}
+
 #navbar .icon {
   display: none;
 }
@@ -523,7 +532,7 @@ section .flechas{
   #navbar a {
     padding: 12px;
     width: 100%;
-    cursor: default;
+    cursor: pointer;
   }
 
   #navbar .span2{
