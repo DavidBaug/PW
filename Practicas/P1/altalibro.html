@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Booksplat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <header id="cabezera">
+
+      <section class="login1">
+        <p>Bienvenido, <span id="user">Juanico</span></p>
+        <a href="index.html">Cerrar sesión</a>
+      </section>
+
+      <section>
+        <a href="index2.html"><img  class="logo" src="images/libro_logo.png"></a>
+      </section>
+
+      <section class="titulo">
+        <a href="index2.html"><h1>BOOKSPLAT</h1></a>
+      </section>
+
+    </header>
+
+    <nav id="navbar">
+
+      <!-- <div class="button">
+        <input id="toggle" checked type="checkbox" value="1" style="display:none;"><i style="color:white;"class="fa fa-bars"></i>
+        <label for="toggle"></label>
+      </div> -->
+      <span class="span2" tabindex="0"><i style="color:white;"class="fa fa-bars"></i></span>
+
+      <ul class="alert">
+        <li><a href="mislibros.html">Mis libros</a></li>
+        <li><a href="foro.html">Foro</a></li>
+        <li><a href="datospersonales.html">Mis datos</a></li>
+        <li><a href="recomendaciones_u1.html">Mis recomendaciones</a></li>
+        <li><a class="exit" style="background-color: red;" href="#">Cerrar sesión</a></li>
+      </ul>
+
+      <ul class="menu">
+        <li><a href="mislibros.html">Mis libros</a></li>
+        <li><a href="foro.html">Foro</a></li>
+        <li><a href="datospersonales.html">Mis datos</a></li>
+        <li><a href="recomendaciones_u1.html">Mis recomendaciones</a></li>
+        <li><a class="active" href="#">Alta libro</a></li>
+      </ul>
+    </nav>
+
+
+    <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+    <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+    <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+    <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+    <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+    <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+
+
+    <form class="" action="index.html" method="post">
+      <article id="libro">
+
+        <section class="top_info">
+          <div class="imagen_alta">
+            <img class="portada" src="images/noimagen.png" >
+            <button type="button" name="button">Cargar imagen</button>
+          </div>
+
+
+          <section class="info">
+            <section class="item">
+              <p>Titulo: </p>
+              <input type="text" name="titulo" value="" required>
+            </section>
+            <section class="item">
+              <p>Autor: </p>
+              <input type="text" name="autor" value="" required>
+            </section>
+            <section class="item">
+              <p>Editorial: </p>
+              <select name="editorial" required>
+                 <option value="Anagrama">Anagrama editorial</option>
+                 <option value="Blackie">Blackie Books</option>
+                 <option value="Seix">Seix Barral</option>
+                 <option value="Planeta">Planeta</option>
+                 <option value="Valdemar">Valdemar</option>
+              </select>
+            </section>
+            <section class="item">
+              <p>Año: </p>
+              <input type="number" name="anio" value="" required>
+            </section>
+            <section class="item">
+              <p>Edición: </p>
+              <input type="text" name="autor" value="" required>
+            </section>
+          </section>
+
+        </section>
+
+        <section class="bot_info">
+          <section class="descripcion">
+            <p>Descripción</p>
+            <textarea name="descripcion" rows="8" cols="100" required></textarea>
+            </section>
+
+          <section class="opinion">
+            <p>Opinión</p>
+            <textarea name="opinion" rows="8" cols="100" required></textarea>
+          </section>
+
+          <section class="valoracion">
+            <p>Mi valoración</p>
+            <input type="radio" name="valoracion" value="1" > 1
+            <input type="radio" name="valoracion" value="2" > 2
+            <input type="radio" name="valoracion" value="3" > 3
+            <input type="radio" name="valoracion" value="4" > 4
+            <input type="radio" name="valoracion" value="5" > 5
+            <input class="submit" type="submit" name="" value="Enviar">
+          </section>
+
+        </section>
+      </article>
+    </form>
+
+
+
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+        <footer id="pie">
+          <section>
+            <p id="contacto">Creado por David Gil Bautista</p>
+            <a id="pdf" href="memoria.pdf"><p>Cómo se hizo</p></a>
+          </section>
+        </footer>
+
+  </body>
+
+</html>

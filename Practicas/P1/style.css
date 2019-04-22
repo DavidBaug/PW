@@ -583,6 +583,7 @@ section .flechas{
 
 #libro .top_info{
     display: inline-block;
+    padding: 0% 15%;
 }
 
 #libro .portada {
@@ -594,7 +595,7 @@ section .flechas{
   padding: 0% 15%;
 }
 
-#libro .info{position: relative;float: right;width: 55%;text-align: left;padding: 0%;}
+#libro .info{position: relative;float: right;width: 50%;text-align: left;padding: 0%;}
 
 #libro .info .item {
   display: flex;
@@ -703,5 +704,58 @@ width: 50%;
     text-align: center;
 }
 
+
+}
+
+#libro .imagen_alta{
+  width: 20%;
+  align-items: center;
+  display: inline-block;
+}
+
+#libro .imagen_alta .portada{
+  width: 100%;
+  padding: 0%;
+}
+
+#libro .imagen_alta .portada + button {
+  float: left;
+  margin: 5% 0%;
+  padding: 3%;
+  width: 100%;
+}
+
+#libro .item input{height: 20px;margin: 1em;width: 250px;}
+
+
+#libro .item select{height: 25px;margin: 1em;width: fit-content;}
+
+#libro .submit{
+    float: right;
+    margin-right: 20%;
+    width: auto;
+    height: fit-content;
+    padding: 5px 20px;
+}
+
+#libro .bot_info textarea{
+  width: -webkit-fill-available;
+  margin-right: 15%;
+}
+
+@media screen and (max-width: 600px) {
+  #libro .bot_info textarea{
+    width: -webkit-fill-available;
+    margin: 0%;
+  }
+
+  #libro .top_info{
+    padding: 5%;
+  }
+
+  #libro .top_info .info{
+    padding: 0%;
+    width: 60%;
+  }
 
 }
