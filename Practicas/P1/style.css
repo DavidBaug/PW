@@ -10,6 +10,7 @@ a:-webkit-any-link {
   text-decoration: none;
   color: #3E4A3D;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 a:visited{
@@ -145,7 +146,7 @@ section .flechas{
   width: auto;
   padding: 0%;
   display: flex;
-  background: #ECECDC;
+  background: #A1AF9F;
   list-style: none;
   margin: auto;
 }
@@ -207,8 +208,8 @@ section .flechas{
 }
 
 /* -------------------------------------------------------------------------- */
-#contacto {display:inline-block;margin-right:10%;}
-#pdf {display:inline-block;}
+#contacto {display:inline-block;margin-right:10%;color: white;}
+#pdf {display:inline-block;color: #ECECDC;}
 
 #pie {
   left: 0;
@@ -218,7 +219,7 @@ section .flechas{
   align-items: center;
   width: -webkit-fill-available;
   text-align: center;
-  background-color: #A1AF9F;
+  background-color: #3E4A3D;
   float: left;
   /* height: -webkit-fill-available; */
   /* padding: 1%; */
@@ -430,7 +431,7 @@ section .flechas{
   margin: inherit;
   bottom: 50px;
   padding: 1%;
-  background: #333333;
+  background: #A1AF9F;
 }
 
 #navbar .span2{
@@ -479,7 +480,7 @@ section .flechas{
     width: 100%;
     position: fixed;
     z-index: 10;
-    background: #A1AF9F;
+    background: #ECECDC;
   }
 
   #ultimos_subidos .altalibro {
@@ -490,7 +491,7 @@ section .flechas{
       position: fixed;
       width: 100%;
       z-index: 20;
-      background: #A1AF9F;
+      background: #ECECDC;
       overflow-y: auto;
     }
 
@@ -541,7 +542,8 @@ section .flechas{
     }
 
     #item1:checked ~ #secciones .item1{
-      color: red;
+    background: #ECECDC;
+    color: #3E4A3D;
     }
 
     #item2:checked ~ #libros_leidos{
@@ -553,7 +555,8 @@ section .flechas{
     }
 
     #item2:checked ~ #secciones .item2{
-      color: red;
+    background: #ECECDC;
+    color: #3E4A3D;
     }
 
 }
@@ -838,4 +841,8 @@ width: 50%;
     width: 60%;
   }
 
+}
+
+#navbar a{
+  text-decoration:  none;
 }
