@@ -215,6 +215,13 @@ section .flechas{
   z-index: 30;
 }
 
+#show{
+  display: none;
+}
+
+#ham{
+  display: none;
+}
 
 #navbar {
   overflow: hidden;
@@ -452,6 +459,8 @@ section .flechas{
   .nav_index form p {
     color: white;
     padding: 1%;
+    font-weight: bold;
+    margin: 0%;
 }
 
   /* Body */
@@ -545,13 +554,14 @@ section .flechas{
     display: none;
   }
 
-  #navbar .span2 {
+  #navbar #ham {
     position: fixed;
     padding: 2%;
     margin: 0%;
     display: flex;
     z-index: 20;
     right: 0;
+    cursor: pointer;
   }
 
   #navbar a {
@@ -561,9 +571,7 @@ section .flechas{
     text-align: center;
   }
 
-  #navbar .span2{
-    cursor: pointer;
-  }
+
 
   #navbar .close{
     display: block;
@@ -590,12 +598,24 @@ section .flechas{
     margin: 0;
   }
 
-.span2:focus ~ .alert {
-  display: block;
-}
+
+
+
 .span2:focus ~ .menu {
   display: none;
 }
+
+#show:checked ~ .alert {
+  display: block;
+  margin: 0%;
+}
+
+#show:checked ~ .menu {
+  display: none;
+}
+
+
+
 
 
 }
