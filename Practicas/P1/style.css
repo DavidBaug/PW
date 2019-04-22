@@ -8,11 +8,12 @@ body {
 
 a:-webkit-any-link {
   text-decoration: none;
-  color: #4d606a;
+  color: #3E4A3D;
+  font-weight: bold;
 }
 
 a:visited{
-  color: #4d606a;
+  color: #3E4A3D;
 }
 
 #cabezera .logo {
@@ -60,7 +61,7 @@ a:visited{
   margin: 0%;
   height: 100px;
   width: -webkit-fill-available;
-  background-color: #DDDDDD;
+  background-color: #A1AF9F;
   padding: 1%;
 }
 
@@ -144,6 +145,15 @@ section .flechas{
   width: auto;
   padding: 0%;
   display: flex;
+  background: #ECECDC;
+  list-style: none;
+  margin: auto;
+}
+
+.secciones{
+  width: auto;
+  padding: 0%;
+  display: flex;
   background: antiquewhite;
   list-style: none;
   margin: auto;
@@ -208,7 +218,7 @@ section .flechas{
   align-items: center;
   width: -webkit-fill-available;
   text-align: center;
-  background-color: grey;
+  background-color: #A1AF9F;
   float: left;
   /* height: -webkit-fill-available; */
   /* padding: 1%; */
@@ -225,7 +235,7 @@ section .flechas{
 
 #navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #3E4A3D;
 }
 
 #navbar .menu li:last-of-type{
@@ -400,7 +410,7 @@ section .flechas{
   width: 40%;
   font-weight: bold;
   font-size: larger;
-  color: #4d606a;
+  color: #3E4A3D;
 }
 
 
@@ -420,7 +430,7 @@ section .flechas{
   margin: inherit;
   bottom: 50px;
   padding: 1%;
-  background: blanchedalmond;
+  background: #333333;
 }
 
 #navbar .span2{
@@ -520,6 +530,30 @@ section .flechas{
     #trigger {
       width: 100%;
       display: none;
+    }
+
+    #item1:checked ~ #libros_leidos{
+      display: block;
+    }
+
+    #item1:checked ~ #ultimos_subidos{
+      display: none;
+    }
+
+    #item1:checked ~ #secciones .item1{
+      color: red;
+    }
+
+    #item2:checked ~ #libros_leidos{
+      display: none;
+    }
+
+    #item1:checked ~ #ultimos_subidos{
+      display: block;
+    }
+
+    #item2:checked ~ #secciones .item2{
+      color: red;
     }
 
 }
