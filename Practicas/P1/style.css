@@ -940,3 +940,33 @@ textarea {
   }
 
 }
+#registro{
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  margin: 0% 10%;
+}
+
+#registro .izq{
+    position: relative;
+    float: left;
+    width: 40%;
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+}
+
+#registro .izq img{width: 40%;padding: 0% 30%;}
+
+#registro .der{
+    padding: 0%;
+    height: -webkit-fill-available;
+    position: relative;
+    float: right;
+    width: 50%;
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+}
+
+
+#cuerpo form input{margin: 5%;border-radius: 20pc;text-align: center;border: black;border-style: solid;padding: 5%;}
+
+#cuerpo form button{margin: 1%;padding: 1% 2%;cursor: pointer;background: #4CAF50;color: white;border: black;border-radius: 20pc;}
