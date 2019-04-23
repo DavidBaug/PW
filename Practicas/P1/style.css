@@ -908,6 +908,25 @@ width: 50%;
 
 #libro .alta{width: 100%;text-align: -webkit-center;padding: 3% 0%;}
 
+textarea {
+  resize: none;
+
+}
+
+#libro .bot_info #librovalorado{
+  width: 100%;
+  margin: 0%;
+}
+
+
+#libro .librovalorado{
+    float: right;
+    margin-right: 1%;
+    width: auto;
+    height: fit-content;
+    padding: 5px 20px;
+}
+
 @media screen and (max-width: 600px) {
   .opiniones{width: 100%;display: block;}
 
