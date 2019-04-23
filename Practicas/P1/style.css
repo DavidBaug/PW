@@ -938,18 +938,24 @@ textarea {
     text-align: center;
     margin: 2%;
   }
-
 }
+
+
+
+
 #registro{
   width: -webkit-fill-available;
   height: -webkit-fill-available;
-  margin: 0% 10%;
+  margin: 0% 15%;
+  display: inline-block;
+  overflow-y: auto;
 }
 
 #registro .izq{
     position: relative;
     float: left;
-    width: 40%;
+    width: 50%;
+    height: fit-content;
     display: -webkit-inline-box;
     text-align: -webkit-center;
 }
@@ -958,15 +964,57 @@ textarea {
 
 #registro .der{
     padding: 0%;
-    height: -webkit-fill-available;
-    position: relative;
-    float: right;
+    height: fit-content;
     width: 50%;
     display: -webkit-inline-box;
-    text-align: -webkit-center;
+    text-align: center;
 }
 
+#registro .botonregistro {
+  height: 32px;
+  width: 100%;
+  margin: 5%;
+  margin-left: 9%;
+}
 
-#cuerpo form input{margin: 5%;border-radius: 20pc;text-align: center;border: black;border-style: solid;padding: 5%;}
+#cuerpo form input{margin: 5%;border-radius: 20pc;text-align: center;border: #3E4A3D;border-style: solid;border-width: 1.5px;padding: 5%;}
 
-#cuerpo form button{margin: 1%;padding: 1% 2%;cursor: pointer;background: #4CAF50;color: white;border: black;border-radius: 20pc;}
+#cuerpo form button{padding: 1% 2%;margin: 1%;cursor: pointer;background: #4CAF50;color: white;border: black;border-radius: 20pc;height: 32px;width: auto;}
+
+
+
+@media screen and (max-width: 600px) {
+
+  #registro{
+    display: block;
+    margin: 0%;
+  }
+
+
+  #registro .izq{
+      position: relative;
+      width: 100%;
+      height: fit-content;
+      display: -webkit-box;
+      text-align: -webkit-center;
+      margin: 0%;
+      padding: 0%;
+      float: none;
+  }
+
+  #registro .izq img{width: 40%;padding: 0% 30%;}
+
+  #registro .der{
+      padding: 0%;
+      height: fit-content;
+      width: -webkit-fill-available;
+      display: -webkit-inline-box;
+      text-align: -webkit-center;
+  }
+
+  #registro .botonregistro {
+    height: 32px;
+    width: 100%;
+  }
+
+}
