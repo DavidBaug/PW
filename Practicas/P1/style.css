@@ -132,7 +132,7 @@ section .flechas{
   width: -webkit-fill-available;
   height: -webkit-fill-available;
   overflow: scroll;
-  padding-bottom: 28%;
+  padding-bottom: 30%;
 }
 
 
@@ -661,7 +661,7 @@ section .flechas{
 #libro{
   margin: 1% 15%;
   display: block;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 #libro .top_info{
@@ -670,12 +670,12 @@ section .flechas{
 }
 
 #libro .portada {
-  width: 13%;
+  width: 15%;
   height: auto;
   object-fit: fill;
   float: left;
   position: relative;
-  padding: 0% 15%;
+  padding: 0% 10%;
 }
 
 #libro .info{position: relative;float: right;width: 50%;text-align: left;padding: 0%;}
@@ -704,8 +704,12 @@ section .flechas{
   font-weight: bold;
 }
 
+#libro .opinion p:first-of-type{
+  font-weight: bold;
+}
+
 #libro .bot_info p:not(:first-of-type){
-  border: aqua;
+  border: #4CAF50;
   border-radius: 0px;
   border-style: solid;
   padding: 1%;
@@ -719,6 +723,10 @@ section .flechas{
 
 
 @media screen and (max-width: 600px) {
+#libro .opinion p:first-of-type{
+  text-align: center;
+}
+
   #libro {
     width: 100%;
     margin: 0;
@@ -740,6 +748,10 @@ padding: 3%;
 
   #libro .valoracion{
     text-align: center;
+  }
+
+  #libro .valoracion p{
+    font-weight: bold;
   }
 
 }
@@ -827,22 +839,85 @@ width: 50%;
 }
 
 @media screen and (max-width: 600px) {
+  #libro .imagen_alta{
+  margin: 5%;
+  }
+
+  #libro .descripcion p:first-of-type{
+    text-align: center;
+  }
+
   #libro .bot_info textarea{
     width: -webkit-fill-available;
     margin: 0%;
   }
 
   #libro .top_info{
-    padding: 5%;
+    padding: 5% 0%;
   }
 
   #libro .top_info .info{
     padding: 0%;
-    width: 60%;
+    width: 55%;
   }
 
 }
 
 #navbar a{
   text-decoration:  none;
+}
+
+
+.opiniones{width: 100%;display: inline-flex;}
+
+
+.opiniones .item{
+  width: 33%;
+  border: #4CAF50;
+  border-radius: 1px;
+  border-style: solid;
+  text-align: center;
+  margin: 1%;
+  height: 100px;
+  overflow: hidden;
+  white-space: nowrap; /* Don't forget this one */
+  text-overflow: ellipsis;
+}
+
+.item_invisible{
+  display: none;
+}
+
+
+.opiniones_navegacion{
+  width: 100%;
+  display: inline;
+}
+
+.opiniones_navegacion a:first-child{
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+
+.opiniones_navegacion a:not(:first-child){
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+#libro .alta{width: 100%;text-align: -webkit-center;padding: 3% 0%;}
+
+@media screen and (max-width: 600px) {
+  .opiniones{width: 100%;display: block;}
+
+  .opiniones .item{
+    width: -webkit-fill-available;
+    border: #4CAF50;
+    border-radius: 1px;
+    border-style: solid;
+    text-align: center;
+    margin: 2%;
+  }
+
 }
