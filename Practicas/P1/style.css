@@ -948,7 +948,6 @@ textarea {
   height: -webkit-fill-available;
   margin: 0% 15%;
   display: inline-block;
-  overflow-y: auto;
 }
 
 #registro .izq{
@@ -960,14 +959,14 @@ textarea {
     text-align: -webkit-center;
 }
 
-#registro .izq img{width: 40%;padding: 0% 30%;}
+#registro .izq img{width: 180px;height: 270px;}
 
 #registro .der{
     padding: 0%;
-    height: fit-content;
     width: 50%;
     display: -webkit-inline-box;
     text-align: center;
+    height: -webkit-fill-available;
 }
 
 #registro .botonregistro {
@@ -981,13 +980,16 @@ textarea {
 
 #cuerpo form button{padding: 1% 2%;margin: 1%;cursor: pointer;background: #4CAF50;color: white;border: black;border-radius: 20pc;height: 32px;width: auto;}
 
-
+#cuerpo{
+  overflow-y: auto;
+}
 
 @media screen and (max-width: 600px) {
 
   #registro{
     display: block;
     margin: 0%;
+    padding-bottom: 50%;
   }
 
 
@@ -1002,11 +1004,10 @@ textarea {
       float: none;
   }
 
-  #registro .izq img{width: 40%;padding: 0% 30%;}
+  #registro .izq img{width: 180px;height: 270px;}
 
   #registro .der{
       padding: 0%;
-      height: fit-content;
       width: -webkit-fill-available;
       display: -webkit-inline-box;
       text-align: -webkit-center;
