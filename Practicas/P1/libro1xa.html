@@ -11,44 +11,49 @@
   <body>
 
     <header id="cabezera">
-
-      <section class="login1">
-        <p>Bienvenido, <span id="user">Juanico</span></p>
-        <a href="index.html">Cerrar sesión</a>
+      <section class="login">
+        <form method="post">
+          <input class="items" type="text" name="username" value="" placeholder="Usuario" required>
+          <br>
+          <input class="items" type="password" name="password" value="" placeholder="Contraseña" required>
+          <br>
+          <button class="items" type="submit" name="login" formaction="index2.html">Acceder</button>
+          <br>
+          <p class="items">Si no tienes cuenta puedes registrarte <a href="altausuario.html">aquí</a></p>
+        </form>
       </section>
 
-      <section>
-        <a href="index2.html"><img  class="logo" src="images/libro_logo.png"></a>
-      </section>
+        <section>
+          <a href="index.html"><img class="logo" src="images/libro_logo.png"></a>
+        </section>
 
-      <section class="titulo">
-        <a href="index2.html"><h1>BOOKSPLAT</h1></a>
-      </section>
+        <section class="titulo">
+            <a href="index.html"><h1>BOOKSPLAT</h1></a>
+        </section>
+
 
     </header>
 
-    <nav id="navbar">
-
-      <!-- <div class="button">
-        <input id="toggle" checked type="checkbox" value="1" style="display:none;"><i style="color:white;"class="fa fa-bars"></i>
-        <label for="toggle"></label>
-      </div> -->
+    <nav id="navbar" class="nav_index">
       <input id="show" type="checkbox" name="" value="">
       <label id="ham" for="show"><i style="color:white;"class="fa fa-bars"></i></label>
-      <ul class="alert">
-        <li><a href="mislibros.html">Mis libros</a></li>
-        <li><a href="foro.html">Foro</a></li>
-        <li><a href="datospersonales.html">Mis datos</a></li>
-        <li><a href="recomendaciones_u1.html">Mis recomendaciones</a></li>
-        <li><a class="exit" style="background-color: red;" href="index.html">Cerrar sesión</a></li>
-      </ul>
+      <form class="alert" method="post">
+        <p>Login</p>
+        <input class="items" type="text" name="username" value="" placeholder="Usuario" required>
+        <br>
+        <input class="items" type="password" name="password" value="" placeholder="Contraseña" required>
+        <br>
+        <button class="items" type="submit" name="login" formaction="index2.html">Acceder</button>
+        <br>
+        <!-- <button style="background: red;"class="items" type="submit" name="registrar" formaction="altausuario.html">Registrar</button> -->
+      </form>
+
+      <form class="alert" method="post">
+        <button style="background: red;"class="items" type="submit" name="registrar" formaction="altausuario.html">Registrar</button>
+      </form>
 
       <ul class="menu">
-        <li><a href="mislibros.html">Mis libros</a></li>
-        <li><a href="foro.html">Foro</a></li>
-        <li><a href="datospersonales.html">Mis datos</a></li>
-        <li><a href="recomendaciones_u1.html">Mis recomendaciones</a></li>
-        <li><a class="active" href="#">Libro valorado</a></li>
+        <li><a class="active" href="#">Login</a></li>
       </ul>
     </nav>
 
@@ -105,33 +110,29 @@
       <h4 style="text-align:center;">Opiniones</h4>
       <article class="opiniones">
         <section class="item">
-          <p>Juanico</p>
-          <p>No leáis las RESEÑAS porque están llenas de SPOILERS!! Si queréis disfrutar de la experiencia completa de este fantástico libro (y de cualquier otro) no leáis las reseñas si no os habéis terminado Reina Roja y, de paso, difundid este mensaje para que nadie se vea perjudicado por los SPOILERS.</p>
+          <p>Laura</p>
+          <p>Inverosímil el personaje de Antonia a la que tampoco llegas a conocer a fondo ni a entender y también es inverosímil que dos tarados solitarios sean capaces de atentar contra dos de las familias más poderosas del mundo y de burlar a todas las fuerzas de élite sin despeinarse</p>
         </section>
 
         <section class="item">
-          <p>Pedro</p>
-          <p>Nada, no os pienso contar nada. Y no dejéis que nadie os cuente nada. Leedla, ya. Yo me he leído la novela en 2 tardes. He leído la versión digital, así que no sabía cuantas páginas, de las impresas de toda la vida, tendría el libro. </p>
+          <p>Julia</p>
+          <p>me ha decepcionado bastante </p>
         </section>
 
         <section class="item">
-          <p>Alex</p>
-          <p>No es solo que el ritmo de la novela es trepidante, si no que lo que te va contando, y sobre todo cómo te lo va contando, es sorprendente e interesante, divertido y asustante, entretenido e inteligente. Y luego está la forma, el estilo... </p>
+          <p>Domingo</p>
+          <p>Reengancha desde la segunda página (desde la primera ya estaba enganchado hace días), Ya me gustaría poder decir que lo he terminado pero no es así por cuestión de que dispongo de poco tiempo libre para leer.</p>
         </section>
 
       </article>
 
       <section class="opiniones_navegacion">
-        <a href="libro1a.html">Anterior</a>
-        <a href="libro1b.html">Siguiente</a>
-      </section>
-
-      <section class="alta">
-        <a href="valoracion_libro1.html">Valorar libro</a>
+        <a href="#">Anterior</a>
+        <a href="libro1x.html">Siguiente</a>
       </section>
 
 
-    </article>
+      </article>
 
 <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
 <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
