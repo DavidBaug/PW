@@ -236,7 +236,7 @@ section .flechas{
 
 #navbar {
   overflow: hidden;
-  background-color: #3E4A3D;
+  background-color: #353D2F;
 }
 
 #navbar .menu li:last-of-type{
@@ -1022,7 +1022,7 @@ textarea {
 
 
 .zona{
-    margin: 5% 15%;
+    margin: 1% 15%;
     padding: 1%;
     border-style: solid;
 }
@@ -1051,15 +1051,19 @@ textarea {
 .zona section:first-child{
   display: flex;
   margin: 0%;
+  color: #353D2F;
 }
 
 .zona ul{
     list-style: none;
+    padding: 0%;
 }
 
 .hilo .top{}
 
-.hilo .bot{}
+.hilo .bot{
+    color: #353D2F;
+}
 
 .hilo .bot ul{
     display: flex;
@@ -1070,16 +1074,21 @@ textarea {
   padding: 0% 1%;
 }
 
-.hilo .titulo_hilo{font-size: 20px;font-style: italic;padding: 0% 4%;}
+.hilo .titulo_hilo{font-size: 20px;font-style: italic;padding: 0% 4%;margin-top: 0%;color: #4CAF50;margin-bottom: 1%;}
 
 .hilo .top p:first-child{
     width: 50%;
     float: left;
     text-align: left;
+    margin-left: 2%;
+    margin-top: 1%;
 }
 
 .hilo .top p:not(first-child){
     width: 50%;
     float: right;
     text-align: -webkit-right;
+    margin-top: 1%;
 }
+
+.zona .hilo a{text-decoration: none;}
