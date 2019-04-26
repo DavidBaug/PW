@@ -1137,7 +1137,9 @@ textarea {
 .zona_hilo section:first-child{
   display: block;
   margin: 0%;
+  background: white;
   color: #353D2F;
+  background: #dcf4dd;
 }
 
 .zona_hilo ul{
@@ -1151,27 +1153,94 @@ textarea {
   border-style: solid;
 }
 
-.zona_hilo .comentarios{
+.zona_hilo #comentarios{
   width: auto;
   padding: 1%;
-  border-style: solid;
+  border-style: none;
   margin-top: 1%;
+  background: white;
 }
 
-.zona_hilo .comentarios ul{
+.zona_hilo #comentarios ul{
 
 }
 
-.zona_hilo .comentarios ul li{padding: 1%;border-style: solid;margin-top: 1%;}
+.zona_hilo #comentarios ul li{padding: 1%;border-style: solid;margin-top: 1%;background: #dcf4dd;}
 
-.zona_hilo .comentarios .titulo{font-size: 125%;font-weight: 600;}
+.zona_hilo #comentarios .titulo{font-size: 125%;font-weight: 600;}
 
 
 .zona_hilo .contenido .top {display: flex;}
 
 .zona_hilo .contenido .top .usuario{width: 50%;float: right;text-align: -webkit-right;margin-right: 1%;font-style: italic;}
 
-.zona_hilo .comentarios ul li p:not(:first-of-type){
+.zona_hilo #comentarios ul li p:not(:first-of-type){
     font-style: italic;
     text-align: -webkit-right;
+}
+
+.zona_hilo #comentarios ul li:last-of-type{
+    display: block;
+}
+
+.zona_hilo #comentarios ul li:last-of-type textarea{
+    width: 100%;
+}
+
+.zona_hilo #comentarios ul li:last-of-type button{
+    text-align: center;
+    width: -webkit-fill-available;
+    margin: 0% 45%;
+}
+
+.zona_hilo #comentarios ul li:last-of-type p{
+    width: auto;
+    font-size: 125%;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 600px) {
+  .zona_hilo #comentarios .titulo{font-size: 125%;font-weight: 600;text-align: center;}
+
+
+  .zona{
+    width: 100%;
+    margin: 0%;
+    border-style: none;
+    display: inline-block;
+}
+
+.zona ul{
+    width: 95%;
+    margin: 0%;
+    margin-block-end: 0%;
+    margin-block-start: 0%;
+    padding-inline-start: 0%;
+}
+
+#cuerpo1{
+    padding-bottom: 13pc;
+}
+
+.zona_hilo{
+  margin: 0;
+  border-style: none;
+}
+.zona_hilo #comentarios ul li:last-of-type textarea{
+    width: -webkit-fill-available;
+}
+
+.zona_hilo #comentarios ul li:last-of-type button{
+    text-align: center;
+    width: -webkit-fill-available;
+    margin: 1% 35%;
+}
+
+.zona_hilo #comentarios ul li:last-of-type p{
+    width: auto;
+    font-size: 125%;
+    font-weight: 600;
+    text-align: center;
+}
 }
