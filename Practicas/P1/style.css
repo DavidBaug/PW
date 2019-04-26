@@ -1313,3 +1313,63 @@ background: #dcf4dd;
 }
 
 }
+
+#cuerpo1 .recomendaciones{
+  text-align: center;
+  display: block;
+  margin: 0% 14.5%;
+}
+
+
+#cuerpo1 .recomendaciones .item{
+  text-align: center;
+  list-style: none;
+}
+
+#cuerpo1 .recomendaciones .item{
+    width: 200px;
+    display: flow-root;
+    margin: 1%;
+    height: auto;
+}
+
+#cuerpo1 .recomendaciones .item img{width: 100%;height: 100%;}
+
+#cuerpo1 .recomendaciones .item p{margin: 0;color: black;}
+
+#cuerpo1 .recomendaciones .fila{
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+
+  #cuerpo1 .recomendaciones{
+    text-align: center;
+    display: block;
+    margin: 0;
+  }
+
+
+  #cuerpo1 .recomendaciones .item{
+    text-align: center;
+    list-style: none;
+  }
+
+  #cuerpo1 .recomendaciones .item{
+      width: 200px;
+      display: flow-root;
+      margin: 1%;
+      height: auto;
+  }
+
+  #cuerpo1 .recomendaciones .item img{width: 200px;height: 300px;}
+
+  #cuerpo1 .recomendaciones .item p{margin: 0;color: black;}
+
+  #cuerpo1 .recomendaciones .fila{
+      display: inline-block;
+      margin: 1%;
+      padding: 1%;
+  }
+
+}
