@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Booksplat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <header id="cabezera">
+
+      <section class="login1">
+        <p>Bienvenido, <span id="user">Juanico</span></p>
+        <a href="index.html">Cerrar sesión</a>
+      </section>
+
+      <section>
+        <a href="index2.html"><img  class="logo" src="images/libro_logo.png"></a>
+      </section>
+
+      <section class="titulo">
+        <a href="index2.html"><h1>BOOKSPLAT</h1></a>
+      </section>
+
+    </header>
+
+    <nav id="navbar">
+
+      <!-- <div class="button">
+        <input id="toggle" checked type="checkbox" value="1" style="display:none;"><i style="color:white;"class="fa fa-bars"></i>
+        <label for="toggle"></label>
+      </div> -->
+      <input id="show" type="checkbox" name="" value="">
+      <label id="ham" for="show"><i style="color:white;"class="fa fa-bars"></i></label>
+      <ul class="alert">
+        <li><a href="mislibros.html">Mis libros</a></li>
+        <li><a class="active" href="foro.html">Foro</a></li>
+        <li><a href="datospersonales.html">Mis datos</a></li>
+        <li><a href="recomendaciones_u1.html">Mis recomendaciones</a></li>
+        <li><a class="exit" style="background-color: red;" href="index.html">Cerrar sesión</a></li>
+      </ul>
+
+      <ul class="menu">
+        <li><a href="mislibros.html">Mis libros</a></li>
+        <li><a class="active" href="foro.html">Foro</a></li>
+        <li><a href="datospersonales.html">Mis datos</a></li>
+        <li><a href="recomendaciones_u1.html">Mis recomendaciones</a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </nav>
+
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+<section id="cuerpo1">
+
+    <form class="formulario" action="index.html" method="post">
+      <p class="titulo">Crear hilo</p>
+
+      <section class="tema">
+        <p>Tema: </p>
+        <select name="Tema" required>
+           <option value="general">General</option>
+           <option value="chismes">Chismes</option>
+           <option value="fantasia">Fantasia</option>
+           <option value="ficcion">Ficción</option>
+           <option value="historia">Historia</option>
+           <option value="drama">Drama</option>
+           <option value="comedia">Comedia</option>
+        </select>
+      </section>
+
+
+      <input class="titulo_input" type="titulo" name="" value="" placeholder="Titulo" required>
+      <textarea class="descripcion" name="texto" rows="20" cols="80" required></textarea>
+
+      <button class="boton" type="submit" name="button">Publicar</button>
+    </form>
+
+</section>
+
+
+
+
+
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+        <footer id="pie">
+          <section>
+            <a id="contacto" href="mailto:davidgilbautista@gmail.com">Contacto</a>
+            <a id="pdf" href="memoria.pdf"><p>Cómo se hizo</p></a>
+          </section>
+        </footer>
+
+  </body>
+
+</html>

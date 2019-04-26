@@ -234,6 +234,9 @@ section .flechas{
   overflow: hidden;
   background-color: #353D2F;
   height: auto;
+  left: 0;
+  position: relative;
+  top: 0;
 }
 
 #navbar .menu li:last-of-type{
@@ -1243,4 +1246,70 @@ textarea {
     font-weight: 600;
     text-align: center;
 }
+}
+
+
+#cuerpo1 .formulario{
+
+margin: 1% 15%;
+
+border: black;
+
+border-style: solid;
+
+padding: 1%;
+
+display: block;
+
+background: #dcf4dd;
+}
+
+#cuerpo1 .formulario .titulo{
+    font-weight: 800;
+    font-size: 125%;
+    margin: 0;
+}
+
+#cuerpo1 .formulario .tema{
+    display: flex;
+    width: -webkit-fill-available;
+}
+
+#cuerpo1 .formulario .titulo_input{
+    width: -webkit-fill-available;
+    margin: 1%;
+}
+#cuerpo1 .formulario .descripcion{
+    width: -webkit-fill-available;
+}
+
+  #cuerpo1 .formulario .tema p{
+    margin-right: 8px;
+    margin: 1%;
+}
+
+  #cuerpo1 .formulario .tema select{
+    height: fit-content;
+    margin: 1%;
+}
+
+#cuerpo1 .formulario .boton{
+    width: -webkit-fill-available;
+    text-align: center;
+    margin: 1% 40%;
+    padding: 0%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  #cuerpo1 .formulario{
+    margin: 1%;
+    border-style: none;
+}
+#cuerpo1 .formulario .titulo{
+  text-align: center;
+}
+
 }
