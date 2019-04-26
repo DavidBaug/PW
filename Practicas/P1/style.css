@@ -8,9 +8,7 @@ body {
 
 a:-webkit-any-link {
   text-decoration: none;
-  color: #3E4A3D;
   font-weight: bold;
-  text-decoration: underline;
 }
 
 a:visited{
@@ -20,7 +18,7 @@ a:visited{
 #cabezera .logo {
   float: left;
   width: 100px;
-  height: -webkit-fill-available;
+  height: auto;
   padding: 0% 5%;
 }
 
@@ -60,7 +58,7 @@ a:visited{
   left: 0;
   align-items: center;
   margin: 0%;
-  height: 100px;
+  height: auto;
   width: -webkit-fill-available;
   background-color: #A1AF9F;
   padding: 1%;
@@ -221,9 +219,7 @@ section .flechas{
   text-align: center;
   background-color: #3E4A3D;
   float: left;
-  /* height: -webkit-fill-available; */
-  /* padding: 1%; */
-  z-index: 30;
+  height: 5%;
 }
 
 #show{
@@ -237,6 +233,7 @@ section .flechas{
 #navbar {
   overflow: hidden;
   background-color: #353D2F;
+  height: auto;
 }
 
 #navbar .menu li:last-of-type{
@@ -298,9 +295,10 @@ section .flechas{
 }
 
 #libros_leidos .item{
-  margin: 1%;
-  padding: 1%;
+  margin: 0;
+  padding: 2%;
   display: inline-block;
+  background: whitesmoke;
 }
 
 #libros_leidos .lista{
@@ -345,11 +343,11 @@ section .flechas{
   width: 70%;
   margin: inherit;
   padding: inherit;
-  height: 100px;
+  height: auto;
   overflow: hidden;
   white-space: pre-wrap;
   text-overflow: ellipsis;
-  word-wrap: break-word;
+  word-break: break-all;
 }
 
 #libros_leidos .autor {
@@ -980,8 +978,11 @@ textarea {
 
 #cuerpo form button{padding: 1% 2%;margin: 1%;cursor: pointer;background: #4CAF50;color: white;border: black;border-radius: 20pc;height: 32px;width: auto;}
 
-#cuerpo{
+#cuerpo1{
+  height: -webkit-fill-available;
   overflow-y: auto;
+  padding-bottom: 15pc;
+  background: #e2eae1;
 }
 
 @media screen and (max-width: 600px) {
@@ -1025,6 +1026,7 @@ textarea {
     margin: 1% 15%;
     padding: 1%;
     border-style: solid;
+    background: whitesmoke;
 }
 
 .zona .hilo{
@@ -1032,6 +1034,7 @@ textarea {
     padding: 1%;
     margin: 0%;
     margin-bottom: 1%;
+    background: white;
 }
 
 .zona section:first-child h4:first-child{
@@ -1040,6 +1043,7 @@ textarea {
   font-weight: bolder;
   margin: 0%;
   padding: 1%;
+  color: black;
 }
 
 .zona section:first-child a{
@@ -1047,6 +1051,7 @@ textarea {
     padding: 2%;
     width: -webkit-fill-available;
     text-align: -webkit-right;
+    color: #4CAF50;
 }
 
 .zona section:first-child{
