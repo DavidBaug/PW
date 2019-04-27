@@ -18,7 +18,7 @@
       </section>
 
       <section>
-        <a href="index2.html"><img  class="logo" src="images/libro_logo.png"></a>
+        <a href="index2.html"><img  class="logo" src="imagenes/libro_logo.png"></a>
       </section>
 
       <section class="titulo">
@@ -35,10 +35,11 @@
       </div> -->
       <input id="show" type="checkbox" name="" value="">
       <label id="ham" for="show"><i style="color:white;"class="fa fa-bars"></i></label>
+
       <ul class="alert">
         <li><a href="mislibros.html">Mis libros</a></li>
         <li><a href="foro.html">Foro</a></li>
-        <li><a class="active" href="datospersonales.html">Mis datos</a></li>
+        <li><a href="datospersonales.html">Mis datos</a></li>
         <li><a href="recomendaciones_u1.html">Mis recomendaciones</a></li>
         <li><a class="exit" style="background-color: red;" href="index.html">Cerrar sesión</a></li>
       </ul>
@@ -46,9 +47,9 @@
       <ul class="menu">
         <li><a href="mislibros.html">Mis libros</a></li>
         <li><a href="foro.html">Foro</a></li>
-        <li><a class="active" href="datospersonales.html">Mis datos</a></li>
+        <li><a href="datospersonales.html">Mis datos</a></li>
         <li><a href="recomendaciones_u1.html">Mis recomendaciones</a></li>
-        <li><a href="#"></a></li>
+        <li><a class="active" href="#">Alta libro</a></li>
       </ul>
     </nav>
 
@@ -60,33 +61,76 @@
     <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
     <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
 
-    <section id="cuerpo">
 
-      <form id="registro" method="post">
-        <h2 style="width: -webkit-fill-available;text-align: -webkit-center;">Editar perfil</h2>
-        <section class="izq">
-          <img class="portada" src="images/perfil.jpg" >
-          <button type="button" name="button">Cargar imagen</button>
+
+    <form class="" action="index.html" method="post">
+      <article id="libro">
+
+        <section class="top_info">
+          <div class="imagen_alta">
+            <img class="portada" src="imagenes/noimagen.png" >
+            <button type="button" name="button">Cargar imagen</button>
+          </div>
+
+
+          <section class="info">
+            <section class="item">
+              <p>Titulo: </p>
+              <input type="text" name="titulo" value="" required>
+            </section>
+            <section class="item">
+              <p>Autor: </p>
+              <input type="text" name="autor" value="" required>
+            </section>
+            <section class="item">
+              <p>Editorial: </p>
+              <select name="editorial" required>
+                 <option value="Anagrama">Anagrama editorial</option>
+                 <option value="Blackie">Blackie Books</option>
+                 <option value="Seix">Seix Barral</option>
+                 <option value="Planeta">Planeta</option>
+                 <option value="Valdemar">Valdemar</option>
+              </select>
+            </section>
+            <section class="item">
+              <p>Año: </p>
+              <input type="number" name="anio" value="" required>
+            </section>
+            <section class="item">
+              <p>Edición: </p>
+              <input type="text" name="autor" value="" required>
+            </section>
+          </section>
+
         </section>
 
-        <section class="der">
-          <input class="items" type="text" name="name" value="" placeholder="Nombre" >
-          <br>
-          <input class="items" type="text" name="lastname" value="" placeholder="Apellidos" >
-          <br>
-          <input class="items" type="text" name="email" value="" placeholder="Correo electronico" >
-          <br>
-          <input class="items" type="text" name="username" value="" placeholder="Nombre de usuario" >
-          <br>
-          <input class="items" type="password" name="password" value="" placeholder="Contraseña" >
-          <br>
-          <button class="botonregistro" type="submit" name="update" formaction="#">Actualizar perfil</button>
+        <section class="bot_info">
+          <section class="descripcion">
+            <p>Descripción</p>
+            <textarea name="descripcion" rows="8" cols="100" required></textarea>
+            </section>
+
+          <section class="opinion">
+            <p>Opinión</p>
+            <textarea name="opinion" rows="8" cols="100" required></textarea>
+          </section>
+
+          <section class="valoracion">
+            <p>Mi valoración</p>
+            <input type="radio" name="valoracion" value="1" > 1
+            <input type="radio" name="valoracion" value="2" > 2
+            <input type="radio" name="valoracion" value="3" > 3
+            <input type="radio" name="valoracion" value="4" > 4
+            <input type="radio" name="valoracion" value="5" > 5
+            <input class="submit" type="submit" name="" value="Enviar">
+          </section>
 
         </section>
+      </article>
+    </form>
 
-      </form>
 
-    </section>
+
 
 <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
 <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
@@ -94,11 +138,10 @@
 <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
 <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
 <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-
 <footer id="pie">
   <section>
     <a id="contacto" href="mailto:davidgilbautista@gmail.com">Contacto</a>
-    <a id="pdf" href="memoria.pdf"><p>Cómo se hizo</p></a>
+    <a id="pdf" href="como_se_hizo.pdf"><p>Cómo se hizo</p></a>
   </section>
 </footer>
 

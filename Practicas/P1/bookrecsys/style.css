@@ -220,6 +220,7 @@ section .flechas{
   background-color: #3E4A3D;
   float: left;
   height: 5%;
+  z-index: 30;
 }
 
 #show{
@@ -301,7 +302,6 @@ section .flechas{
   margin: 0;
   padding: 2%;
   display: inline-block;
-  background: whitesmoke;
 }
 
 #libros_leidos .lista{
@@ -486,6 +486,7 @@ section .flechas{
 
   #ultimos_subidos .altalibro {
     width: 100%;
+    bottom: 44px;
   }
 
     #libros_leidos {

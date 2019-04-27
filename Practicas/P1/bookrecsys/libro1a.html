@@ -11,49 +11,44 @@
   <body>
 
     <header id="cabezera">
-      <section class="login">
-        <form method="post">
-          <input class="items" type="text" name="username" value="" placeholder="Usuario" required>
-          <br>
-          <input class="items" type="password" name="password" value="" placeholder="Contraseña" required>
-          <br>
-          <button class="items" type="submit" name="login" formaction="index2.html">Acceder</button>
-          <br>
-          <p class="items">Si no tienes cuenta puedes registrarte <a href="altausuario.html">aquí</a></p>
-        </form>
+
+      <section class="login1">
+        <p>Bienvenido, <span id="user">Juanico</span></p>
+        <a href="index.html">Cerrar sesión</a>
       </section>
 
-        <section>
-          <a href="index.html"><img class="logo" src="images/libro_logo.png"></a>
-        </section>
+      <section>
+        <a href="index2.html"><img  class="logo" src="imagenes/libro_logo.png"></a>
+      </section>
 
-        <section class="titulo">
-            <a href="index.html"><h1>BOOKSPLAT</h1></a>
-        </section>
-
+      <section class="titulo">
+        <a href="index2.html"><h1>BOOKSPLAT</h1></a>
+      </section>
 
     </header>
 
-    <nav id="navbar" class="nav_index">
+    <nav id="navbar">
+
+      <!-- <div class="button">
+        <input id="toggle" checked type="checkbox" value="1" style="display:none;"><i style="color:white;"class="fa fa-bars"></i>
+        <label for="toggle"></label>
+      </div> -->
       <input id="show" type="checkbox" name="" value="">
       <label id="ham" for="show"><i style="color:white;"class="fa fa-bars"></i></label>
-      <form class="alert" method="post">
-        <p>Login</p>
-        <input class="items" type="text" name="username" value="" placeholder="Usuario" required>
-        <br>
-        <input class="items" type="password" name="password" value="" placeholder="Contraseña" required>
-        <br>
-        <button class="items" type="submit" name="login" formaction="index2.html">Acceder</button>
-        <br>
-        <!-- <button style="background: red;"class="items" type="submit" name="registrar" formaction="altausuario.html">Registrar</button> -->
-      </form>
-
-      <form class="alert" method="post">
-        <button style="background: red;"class="items" type="submit" name="registrar" formaction="altausuario.html">Registrar</button>
-      </form>
+      <ul class="alert">
+        <li><a href="mislibros.html">Mis libros</a></li>
+        <li><a href="foro.html">Foro</a></li>
+        <li><a href="datospersonales.html">Mis datos</a></li>
+        <li><a href="recomendaciones_u1.html">Mis recomendaciones</a></li>
+        <li><a class="exit" style="background-color: red;" href="index.html">Cerrar sesión</a></li>
+      </ul>
 
       <ul class="menu">
-        <li><a class="active" href="#">Login</a></li>
+        <li><a href="mislibros.html">Mis libros</a></li>
+        <li><a href="foro.html">Foro</a></li>
+        <li><a href="datospersonales.html">Mis datos</a></li>
+        <li><a href="recomendaciones_u1.html">Mis recomendaciones</a></li>
+        <li><a class="active" href="#">Libro valorado</a></li>
       </ul>
     </nav>
 
@@ -68,7 +63,7 @@
     <article id="libro">
 
       <section class="top_info">
-        <img class="portada" src="images/portada2.jpg" >
+        <img class="portada" src="imagenes/portada2.jpg" >
 
         <article class="info">
           <section class="item">
@@ -110,41 +105,44 @@
       <h4 style="text-align:center;">Opiniones</h4>
       <article class="opiniones">
         <section class="item">
-          <p>Federico</p>
-          <p>Una novela fantástica</p>
+          <p>Laura</p>
+          <p>Inverosímil el personaje de Antonia a la que tampoco llegas a conocer a fondo ni a entender y también es inverosímil que dos tarados solitarios sean capaces de atentar contra dos de las familias más poderosas del mundo y de burlar a todas las fuerzas de élite sin despeinarse</p>
         </section>
 
         <section class="item">
-          <p>Augusto</p>
-          <p>Está bien </p>
+          <p>Julia</p>
+          <p>me ha decepcionado bastante </p>
         </section>
 
         <section class="item">
-          <p>Florecilla</p>
-          <p>Ojalá tuviera los suficientes conocimientos para poder expresar con palabras lo que he sentido leyendo La cascada. </p>
+          <p>Domingo</p>
+          <p>Reengancha desde la segunda página (desde la primera ya estaba enganchado hace días), Ya me gustaría poder decir que lo he terminado pero no es así por cuestión de que dispongo de poco tiempo libre para leer.</p>
         </section>
 
       </article>
 
       <section class="opiniones_navegacion">
-        <a href="libro1x.html">Anterior</a>
-        <a href="#">Siguiente</a>
+        <a href="#">Anterior</a>
+        <a href="libro1.html">Siguiente</a>
       </section>
 
+      <section class="alta">
+        <a href="valoracion_libro1.html">Valorar libro</a>
+      </section>
 
+      </article>
 
-    </article>
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
 
-<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
 <footer id="pie">
   <section>
     <a id="contacto" href="mailto:davidgilbautista@gmail.com">Contacto</a>
-    <a id="pdf" href="memoria.pdf"><p>Cómo se hizo</p></a>
+    <a id="pdf" href="como_se_hizo.pdf"><p>Cómo se hizo</p></a>
   </section>
 </footer>
 
