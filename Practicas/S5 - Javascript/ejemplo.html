@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplito</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+
+      function mayorQue(num){
+        function esMayor(num2){
+          if(num2>num){
+            return true;
+          }else {
+            return false;
+          }
+        }
+        return esMayor;
+      }
+
+      let mayorQue5 = mayorQue(5);
+
+      document.write("1 es mayor que 5: "+mayorQue5(1));
+
+
+      let alturas = ["1.55","1.60","1.65","1.70","1.75","1.80","1.85","1.90","1.95","2"];
+      let mas180 = mayorQue(1.80);
+
+      let countMas180 = 0;
+
+      for(alt in alturas){
+        if (mas180(alt)) {
+          countMas180 += 1;
+        }
+      }
+
+      let menos = alturas.length - countMas180;
+
+      document.write("\n");
+      document.write("Mas 1.80: "+countMas180+'\n');
+      document.write("Menos 1.80: "+menos+'\n');
+
+    </script>
+
+  </body>
+
+</html>
