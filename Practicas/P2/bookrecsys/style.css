@@ -1,0 +1,1376 @@
+body {
+  height: -webkit-fill-available;
+  margin: 0;
+  width: -webkit-fill-available;
+  overflow: hidden;
+
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited{
+  color: #3E4A3D;
+}
+
+#cabezera .logo {
+  float: left;
+  width: 100px;
+  height: auto;
+  padding: 0% 5%;
+}
+
+#cabezera .titulo{
+  text-align: center;
+  align-items: center;
+  font-size: 100%;
+  padding: 1% 25%;
+}
+
+#cabezera .login1{
+  float: right;
+  text-align: center;
+  width: 15%;
+  padding: 1%;
+}
+
+#cabezera .login{
+  float: right;
+  text-align: center;
+  width: 20%;
+
+}
+
+#cabezera .login button{
+  width: auto;
+}
+
+#cabezera .login .items{
+  align-items: center;
+  text-align: center;
+  margin: 1%;
+}
+
+#cabezera{
+  top: 0;
+  left: 0;
+  align-items: center;
+  margin: 0%;
+  height: auto;
+  width: -webkit-fill-available;
+  background-color: #A1AF9F;
+  padding: 1%;
+}
+
+#cabezera a:hover{
+  color: grey;
+}
+
+#cabezera a:active {
+  color: white;
+}
+
+#cabezera a:visited {
+  background-color: #ddd;
+  color: black;
+}
+
+#user{
+  font-weight: bold;
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+
+section .flechas{
+
+    font-size: -webkit-xxx-large;
+    text-decoration: none;
+    color: black;
+
+}
+
+#imagen_relacionada {
+  height: fit-content;
+  float: left;
+  margin: 0%;
+  align-items: stretch;
+  width: 50%;
+  object-fit: fill;
+}
+
+#imagen_relacionada img{
+  width: 100%;
+
+}
+
+#libros{
+  float: right;
+  margin: 0%;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+#libros .item{
+  margin: 1%;
+  padding: 1%;
+  /* height: 78%; */
+  display: inline-block;
+}
+
+#libros .lista{
+  padding: inherit;
+  margin: inherit;
+  position: relative;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  overflow: scroll;
+  padding-bottom: 30%;
+}
+
+
+
+#libros .a{
+  text-decoration: none;
+  color: #4d606a;
+}
+
+#secciones{
+  width: auto;
+  padding: 0%;
+  display: flex;
+  background: #A1AF9F;
+  list-style: none;
+  margin: auto;
+}
+
+.secciones{
+  width: auto;
+  padding: 0%;
+  display: flex;
+  background: antiquewhite;
+  list-style: none;
+  margin: auto;
+}
+
+#secciones .item1{
+  width: 50%;
+  text-align: center;
+  float: left;
+}
+
+#secciones .item2{
+  width: 50%;
+  text-align: center;
+  float: right;
+}
+
+#libros .titulo{
+  float: right;
+  margin: inherit;
+  padding: inherit;
+  text-align: center;
+  width: 70%;
+  font-weight: bold;
+  font-size: larger;
+}
+
+#libros .portada {
+  float: left;
+  width: 20%;
+  height: auto;
+  margin: inherit;
+  padding: inherit;
+  object-fit: fill;
+}
+
+#libros .descripcion {
+  float: right;
+  width: 70%;
+  margin: inherit;
+  padding: inherit;
+}
+
+#libros .autor {
+  float: right;
+  width: 70%;
+  margin: inherit;
+  padding: inherit;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* -------------------------------------------------------------------------- */
+#contacto {display:inline-block;margin-right:10%;color: white;}
+#pdf {display:inline-block;color: #ECECDC;}
+
+#pie {
+  left: 0;
+  bottom: 0px;
+  position: fixed;
+  display: inline-block;
+  align-items: center;
+  width: -webkit-fill-available;
+  text-align: center;
+  background-color: #3E4A3D;
+  float: left;
+  height: 5%;
+  z-index: 30;
+}
+
+#show{
+  display: none;
+}
+
+#ham{
+  display: none;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #353D2F;
+  height: auto;
+  left: 0;
+  position: relative;
+  top: 0;
+}
+
+#navbar .menu li:last-of-type{
+  display: none;
+}
+
+#navbar .menu{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar .hidden_menu{
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  font-weight: 600;
+  padding: 12px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.exit {
+  background-color: red;
+  color: white;
+}
+
+.exit:hover{
+  background-color: black;
+}
+
+#navbar .icon {
+  display: none;
+}
+
+
+#libros_leidos{
+  float: left;
+  margin: 0%;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+#libros_leidos .item{
+  margin: 0;
+  padding: 2%;
+  display: inline-block;
+}
+
+#libros_leidos .lista{
+  padding: inherit;
+  margin: inherit;
+  position: relative;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  overflow-y: auto;
+  padding-bottom: 34%;
+}
+
+
+
+#libros_leidos .a{
+  text-decoration: none;
+  color: #4d606a;
+}
+
+
+
+#libros_leidos .titulo{
+  float: right;
+  margin: inherit;
+  padding: inherit;
+  text-align: center;
+  width: 70%;
+  font-weight: bold;
+  font-size: larger;
+}
+
+#libros_leidos .portada {
+  float: left;
+  width: 20%;
+  object-fit: fill;
+  margin: inherit;
+  padding: inherit;
+}
+
+#libros_leidos .descripcion {
+  float: right;
+  width: 70%;
+  margin: inherit;
+  padding: inherit;
+  height: auto;
+  overflow: hidden;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+#libros_leidos .autor {
+  float: right;
+  width: 70%;
+  margin: inherit;
+  padding: inherit;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+#ultimos_subidos{
+  float: right;
+  margin: 0%;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+#ultimos_subidos .item{
+  margin: 0%;
+  padding: 0%;
+  display: inline-block;
+  width: -webkit-fill-available;
+}
+
+#ultimos_subidos .lista{
+  padding: inherit;
+  margin: inherit;
+  position: relative;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  overflow: scroll;
+  padding-bottom: 40%;
+}
+
+
+
+#ultimos_subidos .a{
+  text-decoration: none;
+  color: #4d606a;
+}
+
+
+
+#ultimos_subidos .titulo{
+  float: left;
+  margin: 1%;
+  padding: 1%;
+  width: 40%;
+  font-weight: bold;
+  font-size: larger;
+  color: #3E4A3D;
+}
+
+
+#ultimos_subidos .autor {
+  float: right;
+  width: 40%;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+  font-weight: bold;
+}
+
+#ultimos_subidos .altalibro{
+  position: fixed;
+  text-align: -webkit-center;
+  width: 50%;
+  margin: inherit;
+  bottom: 50px;
+  padding: 1%;
+  background: #A1AF9F;
+}
+
+#navbar .span2{
+  display: none;
+}
+
+#navbar .close{
+  display: none;
+}
+
+#trigger {
+  width: 100%;
+  display: none;
+}
+
+.alert {
+  display: none;
+}
+
+#cabezera form input{margin: 1%;border-radius: 20pc;text-align: center;border: black;}
+
+#cabezera form button{margin: 1%;padding: 1% 2%;cursor: pointer;background: #4CAF50;color: white;border: black;border-radius: 20pc;}
+
+@media screen and (max-width: 600px) {
+
+  #navbar .menu li:last-of-type{
+    display: block;
+  }
+
+  .nav_index form {text-align: center;width: 100%;}
+
+  .nav_index form input{margin: 1%;border-radius: 20pc;text-align: center;border: black;}
+
+  .nav_index form button{margin: 1%;padding: 1% 2%;cursor: pointer;background: #4CAF50;color: white;border: black;border-radius: 20pc;}
+
+  .nav_index form p {
+    color: white;
+    padding: 1%;
+    font-weight: bold;
+    margin: 0%;
+}
+
+  /* Body */
+
+  #ultimos_subidos {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background: #ECECDC;
+  }
+
+  #ultimos_subidos .altalibro {
+    width: 100%;
+    bottom: 44px;
+  }
+
+    #libros_leidos {
+      position: fixed;
+      width: 100%;
+      z-index: 20;
+      background: #ECECDC;
+      overflow-y: auto;
+    }
+
+    #libros_leidos .lista{
+      padding-bottom: 50%;
+    }
+
+    #ultimos_subidos .lista{
+      padding-bottom: 53%;
+    }
+
+
+    #libros_leidos .portada{
+      width: 90px;
+      height: 135px;
+    }
+
+    #libros_leidos .descripcion {
+      height: 135px;
+      overflow: hidden;
+    }
+
+
+/*  */
+
+    #libros_leidos .box {
+      visibility: visible;
+    }
+
+    #trigger:checked + #libros_leidos{
+      visibility: hidden;
+      z-index: 0;
+
+    }
+
+
+    #trigger {
+      width: 100%;
+      display: none;
+    }
+
+    #item1:checked ~ #libros_leidos{
+      display: block;
+    }
+
+    #item1:checked ~ #ultimos_subidos{
+      display: none;
+    }
+
+    #item1:checked ~ #secciones .item1{
+    background: #ECECDC;
+    color: #3E4A3D;
+    }
+
+    #item2:checked ~ #libros_leidos{
+      display: none;
+    }
+
+    #item1:checked ~ #ultimos_subidos{
+      display: block;
+    }
+
+    #item2:checked ~ #secciones .item2{
+    background: #ECECDC;
+    color: #3E4A3D;
+    }
+
+}
+@media screen and (max-width: 600px) {
+  #cabezera{
+    height: 100px;
+  }
+
+  #cabezera .logo {
+    float: right;
+    padding: 0% 10%;
+  }
+
+  #cabezera .titulo {
+    width: 50%;
+    float: left;
+    padding: 1%;
+    margin: 1%;
+  }
+
+  #cabezera .login{
+    display: none;
+  }
+
+  #cabezera .login1{
+    display: none;
+  }
+
+
+
+  #navbar .menu a:not(.active) {
+    display: none;
+  }
+
+  #navbar #ham {
+    position: fixed;
+    padding: 2%;
+    margin: 0%;
+    display: flex;
+    z-index: 20;
+    right: 0;
+    cursor: pointer;
+  }
+
+  #navbar a {
+    padding: 12px;
+    width: -webkit-fill-available;
+    cursor: pointer;
+    text-align: center;
+  }
+
+
+
+  #navbar .close{
+    display: block;
+    cursor: pointer;
+  }
+
+  #navbar a:hover{
+    background: #4CAF50;
+    color: white;
+  }
+
+  #navbar .hidden_menu{
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .alert{
+    display: none;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+
+
+
+
+.span2:focus ~ .menu {
+  display: none;
+}
+
+#show:checked ~ .alert {
+  display: block;
+  margin: 0%;
+}
+
+#show:checked ~ .menu {
+  display: none;
+}
+
+
+
+
+
+}
+
+
+#libro{
+  margin: 1% 15%;
+  display: block;
+  overflow-y: auto;
+}
+
+#libro .top_info{
+    display: inline-block;
+    padding: 0% 15%;
+}
+
+#libro .portada {
+  width: 15%;
+  height: auto;
+  object-fit: fill;
+  float: left;
+  position: relative;
+  padding: 0% 10%;
+}
+
+#libro .info{position: relative;float: right;width: 50%;text-align: left;padding: 0%;}
+
+#libro .info .item {
+  display: flex;
+}
+
+#libro .info .item p:first-of-type{
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#libro .bot_info{padding: 0% 10%;}
+
+
+#libro .descripcion {
+  display: block;
+}
+
+#libro .opinion {
+  display: block;
+}
+
+#libro .descripcion p:first-of-type{
+  font-weight: bold;
+}
+
+#libro .opinion p:first-of-type{
+  font-weight: bold;
+}
+
+#libro .bot_info p:not(:first-of-type){
+  border: #4CAF50;
+  border-radius: 0px;
+  border-style: solid;
+  padding: 1%;
+}
+
+
+#libro .opinion p:first-of-type{
+  font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 600px) {
+#libro .opinion p:first-of-type{
+  text-align: center;
+}
+
+  #libro {
+    width: 100%;
+    margin: 0;
+    height: -webkit-fill-available;
+    padding-bottom: 40%;
+  }
+
+  #libro .portada{
+
+width: 30%;
+
+padding: 2% 5%;
+  }
+
+  #libro .bot_info{
+
+padding: 3%;
+  }
+
+  #libro .valoracion{
+    text-align: center;
+  }
+
+  #libro .valoracion p{
+    font-weight: bold;
+  }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  #libros .lista{
+
+padding-bottom: 50%;
+  }
+
+  #imagen_relacionada{
+    display: none;
+  }
+
+  #libros{
+    width: 100%;
+  }
+
+  #libros .portada{
+
+width: 25%;
+
+height: auto;
+
+}
+
+  #libros .titulo{
+
+width: 50%;
+
+}
+
+  #libros .descripcion {width: 60%;}
+
+  #libros .autor {
+    float: left;
+    width: 25%;
+    padding: 3% 0%;
+    text-align: center;
+}
+
+
+}
+
+#libro .imagen_alta{
+  width: 20%;
+  align-items: center;
+  display: inline-block;
+}
+
+#libro .imagen_alta .portada{
+  width: 100%;
+  padding: 0%;
+}
+
+#libro .imagen_alta .portada + button {
+  float: left;
+  margin: 5% 0%;
+  padding: 3%;
+  width: 100%;
+}
+
+#libro .item input{height: 20px;margin: 1em;width: 250px;}
+
+
+#libro .item select{height: 25px;margin: 1em;width: fit-content;}
+
+#libro .submit{
+    float: right;
+    margin-right: 20%;
+    width: auto;
+    height: fit-content;
+    padding: 5px 20px;
+}
+
+#libro .bot_info textarea{
+  width: -webkit-fill-available;
+  margin-right: 15%;
+}
+
+@media screen and (max-width: 600px) {
+  #libro .imagen_alta{
+  margin: 5%;
+  }
+
+  #libro .descripcion p:first-of-type{
+    text-align: center;
+  }
+
+  #libro .bot_info textarea{
+    width: -webkit-fill-available;
+    margin: 0%;
+  }
+
+  #libro .top_info{
+    padding: 5% 0%;
+  }
+
+  #libro .top_info .info{
+    padding: 0%;
+    width: 55%;
+  }
+
+}
+
+#navbar a{
+  text-decoration:  none;
+}
+
+
+.opiniones{width: 100%;display: inline-flex;}
+
+
+.opiniones .item{
+  width: 33%;
+  border: #4CAF50;
+  border-radius: 1px;
+  border-style: solid;
+  text-align: center;
+  margin: 1%;
+  height: 100px;
+  overflow: hidden;
+  white-space: nowrap; /* Don't forget this one */
+  text-overflow: ellipsis;
+}
+
+.item_invisible{
+  display: none;
+}
+
+
+.opiniones_navegacion{
+  width: 100%;
+  display: inline;
+}
+
+.opiniones_navegacion a:first-child{
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+
+.opiniones_navegacion a:not(:first-child){
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+#libro .alta{width: 100%;text-align: -webkit-center;padding: 3% 0%;}
+
+textarea {
+  resize: none;
+
+}
+
+#libro .bot_info #librovalorado{
+  width: 100%;
+  margin: 0%;
+}
+
+
+#libro .librovalorado{
+    float: right;
+    margin-right: 1%;
+    width: auto;
+    height: fit-content;
+    padding: 5px 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .opiniones{width: 100%;display: block;}
+
+  .opiniones .item{
+    width: -webkit-fill-available;
+    border: #4CAF50;
+    border-radius: 1px;
+    border-style: solid;
+    text-align: center;
+    margin: 2%;
+  }
+}
+
+
+
+
+#registro{
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  margin: 0% 15%;
+  display: inline-block;
+}
+
+#registro .izq{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: fit-content;
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+}
+
+#registro .izq img{width: 180px;height: 270px;}
+
+#registro .der{
+    padding: 0%;
+    width: 50%;
+    display: -webkit-inline-box;
+    text-align: center;
+    height: -webkit-fill-available;
+}
+
+#registro .botonregistro {
+  height: 32px;
+  width: 100%;
+  margin: 5%;
+  margin-left: 9%;
+}
+
+#cuerpo form input{margin: 5%;border-radius: 20pc;text-align: center;border: #3E4A3D;border-style: solid;border-width: 1.5px;padding: 5%;}
+
+#cuerpo form button{padding: 1% 2%;margin: 1%;cursor: pointer;background: #4CAF50;color: white;border: black;border-radius: 20pc;height: 32px;width: auto;}
+
+#cuerpo1{
+  height: -webkit-fill-available;
+  overflow-y: auto;
+  padding-bottom: 15pc;
+  background: #e2eae1;
+}
+
+@media screen and (max-width: 600px) {
+
+  #registro{
+    display: block;
+    margin: 0%;
+    padding-bottom: 50%;
+  }
+
+
+  #registro .izq{
+      position: relative;
+      width: 100%;
+      height: fit-content;
+      display: -webkit-box;
+      text-align: -webkit-center;
+      margin: 0%;
+      padding: 0%;
+      float: none;
+  }
+
+  #registro .izq img{width: 180px;height: 270px;}
+
+  #registro .der{
+      padding: 0%;
+      width: -webkit-fill-available;
+      display: -webkit-inline-box;
+      text-align: -webkit-center;
+  }
+
+  #registro .botonregistro {
+    height: 32px;
+    width: 100%;
+  }
+
+}
+
+
+.zona{
+    margin: 1% 15%;
+    padding: 1%;
+    border-style: solid;
+    background: whitesmoke;
+}
+
+.zona .hilo{
+    border-style: solid;
+    padding: 1%;
+    margin: 0%;
+    margin-bottom: 1%;
+    background: white;
+}
+
+.zona section:first-child h4:first-child{
+  font-size: 22px;
+  width: 50%;
+  font-weight: bolder;
+  margin: 0%;
+  padding: 1%;
+  color: black;
+}
+
+.zona section:first-child a{
+    float: right;
+    padding: 2%;
+    width: -webkit-fill-available;
+    text-align: -webkit-right;
+    color: #4CAF50;
+}
+
+.zona section:first-child{
+  display: flex;
+  margin: 0%;
+  color: #353D2F;
+}
+
+.zona ul{
+    list-style: none;
+    padding: 0%;
+}
+
+.hilo .top{}
+
+.hilo .bot{
+    color: #353D2F;
+}
+
+.hilo .bot ul{
+    display: flex;
+    list-style: none;
+}
+
+.hilo .bot ul li{
+  padding: 0% 1%;
+}
+
+.hilo .titulo_hilo{font-size: 20px;font-style: italic;padding: 0% 4%;margin-top: 0%;color: #4CAF50;margin-bottom: 1%;}
+
+.hilo .top p:first-child{
+    width: 50%;
+    float: left;
+    text-align: left;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+.hilo .top p:not(first-child){
+    width: 50%;
+    float: right;
+    text-align: -webkit-right;
+    margin-top: 1%;
+}
+
+.zona .hilo a{text-decoration: none;}
+
+
+
+
+.zona_hilo{
+    margin: 1% 15%;
+    padding: 1%;
+    border-style: solid;
+    background: whitesmoke;
+}
+
+.zona_hilo .hilo{
+    border-style: solid;
+    padding: 1%;
+    margin: 0%;
+    margin-bottom: 1%;
+    background: white;
+}
+
+.zona_hilo section:first-child h4:first-child{
+  font-size: 22px;
+  width: 50%;
+  font-weight: bolder;
+  margin: 0%;
+  padding: 1%;
+  color: black;
+}
+
+.zona_hilo section:first-child a{
+    float: right;
+    padding: 2%;
+    width: -webkit-fill-available;
+    text-align: -webkit-right;
+    color: #4CAF50;
+}
+
+.zona_hilo section:first-child{
+  display: block;
+  margin: 0%;
+  background: white;
+  color: #353D2F;
+  background: #dcf4dd;
+}
+
+.zona_hilo ul{
+    list-style: none;
+    padding: 0%;
+}
+
+.zona_hilo .contenido{
+  width: auto;
+  padding: 1%;
+  border-style: solid;
+}
+
+.zona_hilo #comentarios{
+  width: auto;
+  padding: 1%;
+  border-style: none;
+  margin-top: 1%;
+  background: white;
+}
+
+.zona_hilo #comentarios ul{
+
+}
+
+.zona_hilo #comentarios ul li{padding: 1%;border-style: solid;margin-top: 1%;background: #dcf4dd;}
+
+.zona_hilo #comentarios .titulo{font-size: 125%;font-weight: 600;}
+
+
+.zona_hilo .contenido .top {display: flex;}
+
+.zona_hilo .contenido .top .usuario{width: 50%;float: right;text-align: -webkit-right;margin-right: 1%;font-style: italic;}
+
+.zona_hilo #comentarios ul li p:not(:first-of-type){
+    font-style: italic;
+    text-align: -webkit-right;
+}
+
+.zona_hilo #comentarios ul li:last-of-type{
+    display: block;
+}
+
+.zona_hilo #comentarios ul li:last-of-type textarea{
+    width: 100%;
+}
+
+.zona_hilo #comentarios ul li:last-of-type button{
+    text-align: center;
+    width: -webkit-fill-available;
+    margin: 0% 45%;
+}
+
+.zona_hilo #comentarios ul li:last-of-type p{
+    width: auto;
+    font-size: 125%;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 600px) {
+  .zona_hilo #comentarios .titulo{font-size: 125%;font-weight: 600;text-align: center;}
+
+
+  .zona{
+    width: 100%;
+    margin: 0%;
+    border-style: none;
+    display: inline-block;
+}
+
+.zona ul{
+    width: 95%;
+    margin: 0%;
+    margin-block-end: 0%;
+    margin-block-start: 0%;
+    padding-inline-start: 0%;
+}
+
+#cuerpo1{
+    padding-bottom: 13pc;
+}
+
+.zona_hilo{
+  margin: 0;
+  border-style: none;
+}
+.zona_hilo #comentarios ul li:last-of-type textarea{
+    width: -webkit-fill-available;
+}
+
+.zona_hilo #comentarios ul li:last-of-type button{
+    text-align: center;
+    width: -webkit-fill-available;
+    margin: 1% 35%;
+}
+
+.zona_hilo #comentarios ul li:last-of-type p{
+    width: auto;
+    font-size: 125%;
+    font-weight: 600;
+    text-align: center;
+}
+}
+
+
+#cuerpo1 .formulario{
+
+margin: 1% 15%;
+
+border: black;
+
+border-style: solid;
+
+padding: 1%;
+
+display: block;
+
+background: #dcf4dd;
+}
+
+#cuerpo1 .formulario .titulo{
+    font-weight: 800;
+    font-size: 125%;
+    margin: 0;
+}
+
+#cuerpo1 .formulario .tema{
+    display: flex;
+    width: -webkit-fill-available;
+}
+
+#cuerpo1 .formulario .titulo_input{
+    width: -webkit-fill-available;
+    margin: 1%;
+}
+#cuerpo1 .formulario .descripcion{
+    width: -webkit-fill-available;
+}
+
+  #cuerpo1 .formulario .tema p{
+    margin-right: 8px;
+    margin: 1%;
+}
+
+  #cuerpo1 .formulario .tema select{
+    height: fit-content;
+    margin: 1%;
+}
+
+#cuerpo1 .formulario .boton{
+    width: -webkit-fill-available;
+    text-align: center;
+    margin: 1% 40%;
+    padding: 0%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  #cuerpo1 .formulario{
+    margin: 1%;
+    border-style: none;
+}
+#cuerpo1 .formulario .titulo{
+  text-align: center;
+}
+
+}
+
+#cuerpo1 .recomendaciones{
+  text-align: center;
+  display: block;
+  margin: 0% 14.5%;
+}
+
+
+#cuerpo1 .recomendaciones .item{
+  text-align: center;
+  list-style: none;
+}
+
+#cuerpo1 .recomendaciones .item{
+    width: 200px;
+    display: flow-root;
+    margin: 1%;
+    height: auto;
+}
+
+#cuerpo1 .recomendaciones .item img{width: 100%;height: 100%;}
+
+#cuerpo1 .recomendaciones .item p{margin: 0;color: black;}
+
+#cuerpo1 .recomendaciones .fila{
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+
+  #cuerpo1 .recomendaciones{
+    text-align: center;
+    display: block;
+    margin: 0;
+  }
+
+
+  #cuerpo1 .recomendaciones .item{
+    text-align: center;
+    list-style: none;
+  }
+
+  #cuerpo1 .recomendaciones .item{
+      width: 200px;
+      display: flow-root;
+      margin: 1%;
+      height: auto;
+  }
+
+  #cuerpo1 .recomendaciones .item img{width: 200px;height: 300px;}
+
+  #cuerpo1 .recomendaciones .item p{margin: 0;color: black;}
+
+  #cuerpo1 .recomendaciones .fila{
+      display: inline-block;
+      margin: 1%;
+      padding: 1%;
+  }
+
+}
