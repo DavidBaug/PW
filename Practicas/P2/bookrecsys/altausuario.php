@@ -15,8 +15,8 @@
   <body>
 
     <?php
-      require_once "header_login.html";
-      require_once "navbar_login.html";
+      require_once "header_login.php";
+      require_once "navbar_login.php";
 
     ?>
 
@@ -51,7 +51,7 @@
         </section>
 
         <?php
-          require_once "footer.html";
+          require_once "footer.php";
         ?>
 
 

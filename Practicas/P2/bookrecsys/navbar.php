@@ -1,9 +1,5 @@
 <nav id="navbar">
 
-  <!-- <div class="button">
-    <input id="toggle" checked type="checkbox" value="1" style="display:none;"><i style="color:white;"class="fa fa-bars"></i>
-    <label for="toggle"></label>
-  </div> -->
   <input id="show" type="checkbox" name="" value="">
   <label id="ham" for="show"><i style="color:white;"class="fa fa-bars"></i></label>
   <ul class="alert">
