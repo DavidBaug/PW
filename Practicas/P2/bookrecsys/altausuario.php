@@ -15,8 +15,8 @@
   <body>
 
     <?php
-      require_once "recursos/header_login.html";
-      require_once "recursos/navbar_login.html";
+      require_once "header_login.html";
+      require_once "navbar_login.html";
 
     ?>
 
@@ -41,7 +41,7 @@
               <br>
               <input class="items" type="password" name="password" value="" placeholder="Contraseña" required>
               <br>
-              <button class="botonregistro" type="submit" name="login" formaction="gestoraltausuario.php">Registrarse</button>
+              <button class="botonregistro" type="submit" name="login" formaction="registration.php">Registrarse</button>
 
             </section>
 
@@ -51,7 +51,7 @@
         </section>
 
         <?php
-          require_once "recursos/footer.html";
+          require_once "footer.html";
         ?>
 
 

@@ -1,77 +1,41 @@
 <?php
-/*
-Author: Javed Ur Rehman
-Website: http://www.allphptricks.com/
-*/
-?>
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Registration</title>
-<link rel="stylesheet" href="style.css" />
-</head>
-<body>
+    require_once('db.php');
 
-<?php
+    // Si no sesion
+    if(!isset($_SESSION["username"])){
+        if((isset($_POST['name'])) && (isset($_POST['lastname'])) && (isset($_POST['email'])) && (isset($_POST['password']))){
+          // Conseguir datos y registrar usuario
+          $username = $_POST['username'];
+          $name = $_POST['name'];
+          $lastname = $_POST['lastname'];
+          $email = $_POST['email'];
+          $password = $_POST['password'];
 
-require_once('db.php');
+          $sql = "INSERT INTO usuario VALUES( '$username', '$name', '$lastname', '$email', '$password');";
 
-    // If form submitted, insert values into the database.
-    if (isset($_REQUEST['username'])){
-		$username = stripslashes($_REQUEST['username']); // removes backslashes
-		$username = mysqli_real_escape_string($con,$username); //escapes special characters in a string
-		$email = stripslashes($_REQUEST['email']);
-		$email = mysqli_real_escape_string($con,$email);
-		$password = stripslashes($_REQUEST['password']);
-		$password = mysqli_real_escape_string($con,$password);
-		$name = stripslashes($_REQUEST['name']);
-		$name = mysqli_real_escape_string($con,$name);
-		$lastname = stripslashes($_REQUEST['lastname']);
-		$lastname = mysqli_real_escape_string($con,$lastname);
+          // Si no falla consulta vuelta a index
+          if (mysqli_query($conn, $sql)) {
+              $_SESSION['error']= "0";
+              mysqli_close($conn);
 
-		echo "$username";
+              header("Location: ./index.php");
+          } else { // Si falla vuelta a registrar
+              $_SESSION['error']= "1";
+              mysqli_close($conn);
 
-    $query = "INSERT into `usuario` VALUES ('$username', '$name','$lastname','$email','".md5($password)."');";
-    $result = mysqli_query($con,$query);
-    if($result){
-        echo "<div class='form'><h3>You are registered successfully.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
-    }else {
-        echo "ashdaoishdoaishdosih";
-    }
+              header("Location: ./altausuario.php");
+          }
+        } else { //Si no has rellenado form vuelta a registrar
+            $_SESSION['error']= "1";
+            mysqli_close($conn);
+
+            header("Location: ./altausuario.php");
+        }
+    } else { // Si ya hay sesión
+        $_SESSION['error']= "1";
+        mysqli_close($conn);
+
+        header("Location: ./index.php");
     }
 ?>
-
-<?php include('recursos/header_login.html') ?>
-
-<section id="cuerpo">
-
-	<form id="registro" method="post">
-		<h2 style="width: -webkit-fill-available;text-align: -webkit-center;">Registro</h2>
-		<section class="izq">
-			<img class="portada" src="imagenes/noimagen.png" >
-			<button type="button" name="button">Cargar imagen</button>
-		</section>
-
-		<section class="der">
-			<input class="items" type="text" name="name" value="" placeholder="Nombre" required>
-			<br>
-			<input class="items" type="text" name="lastname" value="" placeholder="Apellidos" required>
-			<br>
-			<input class="items" type="text" name="email" value="" placeholder="Correo electronico" required>
-			<br>
-			<input class="items" type="text" name="username" value="" placeholder="Nombre de usuario" required>
-			<br>
-			<input class="items" type="password" name="password" value="" placeholder="Contraseña" required>
-			<br>
-			<button class="botonregistro" type="submit" name="login" formaction="">Registrarse</button>
-
-		</section>
-
-	</form>
-
-<?php include('recursos/footer.html') ?>
-
-</body>
-</html>

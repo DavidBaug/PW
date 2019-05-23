@@ -5,18 +5,18 @@
       <br>
       <input class="items" type="password" name="password" value="" placeholder="Contraseña" required>
       <br>
-      <button class="items" type="submit" name="login" formaction="index2.html">Acceder</button>
+      <button class="items" type="submit" name="login" formaction="login.php">Acceder</button>
       <br>
-      <p class="items">Si no tienes cuenta puedes registrarte <a href="altausuario.html">aquí</a></p>
+      <p class="items">Si no tienes cuenta puedes registrarte <a href="altausuario.php">aquí</a></p>
     </form>
   </section>
 
     <section>
-      <a href="index.html"><img class="logo" src="imagenes/libro_logo.png"></a>
+      <a href="index.php"><img class="logo" src="imagenes/libro_logo.png"></a>
     </section>
 
     <section class="titulo">
-        <a href="index.html"><h1>BOOKSPLAT</h1></a>
+        <a href="index.php"><h1>BOOKSPLAT</h1></a>
     </section>
 
 
