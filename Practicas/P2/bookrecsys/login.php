@@ -14,7 +14,7 @@ Website: http://www.allphptricks.com/
 <body>
 <?php
 	require('db.php');
-	session_start();
+	// session_start();
     // If form submitted, insert values into the database.
     if (isset($_POST['username'])){
 

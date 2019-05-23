@@ -1,26 +1,40 @@
 <?php
-// Requerimos la comprobación de que la sesión esté iniciada, si no redirigirá a la ventana de login
-require_once "sesion.php";
-include "configuracion.php";
-// Include('dbinit.php');
-// Si no se solicita ninguna pagina mostramos la home
-if(!isset($_GET['page'])) {
-    $page = "index";
-    $page_title = "Home";
-    include('index.html');
-} else {
-	$page = $_GET['page'];
-    // Si no existe mostramos la pagina de error
-	if(!file_exists($page . ".html")) {
-        header("Location: 404.html");
-        exit();
-	} else {
-        // Cargamos la página solicitada
-        $page_title = ucwords(str_replace("_", " ", $page));
-        // include('view/header.phtml');
-		include($page . '.html');
-	}
-}
-// Cargamos el pie de la página
-// include "view/footer.phtml";
+
+    require_once('db.php');
+
+    // Si no sesion
+    if(!isset($_SESSION["username"])){
+        if((isset($_POST['name'])) && (isset($_POST['lastname'])) && (isset($_POST['email'])) && (isset($_POST['password']))){
+          // Conseguir datos y registrar usuario
+          $username = $_POST['username'];
+          $name = $_POST['name'];
+          $lastname = $_POST['lastname'];
+          $email = $_POST['email'];
+          $password = $_POST['password'];
+
+          $sql = "INSERT INTO usuario VALUES( '$username', '$name', '$lastname', '$email', '$password');";
+
+          if (mysqli_query($conn, $sql)) {
+              $_SESSION['error']= "0";
+              mysqli_close($conn);
+
+              header("Location: ./index.php");
+          } else {
+              $_SESSION['error']= "1";
+              mysqli_close($conn);
+
+              header("Location: ./gestoraltausuario.php");
+          }
+        } else {
+            $_SESSION['error']= "1";
+            mysqli_close($conn);
+
+            header("Location: ./gestoraltausuario.php");
+        }
+    } else {
+        $_SESSION['error']= "1";
+        mysqli_close($conn);
+
+        header("Location: ./gestoraltausuario.php");
+    }
 ?>
