@@ -1,7 +1,7 @@
 <header id="cabezera">
 
   <section class="login1">
-    <p>Bienvenido, <?php $_SESSION['username'] ?></p>
+    <p>Bienvenido, <?php echo $_SESSION['username']; ?></p>
 
     <a href="logout.php">Cerrar sesión</a>
   </section>

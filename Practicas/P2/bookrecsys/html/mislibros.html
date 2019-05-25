@@ -1,223 +1,138 @@
-<!DOCTYPE html>
-<html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Booksplat</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<section id="cuerpo">
 
-    <link rel="stylesheet" href="style.css">
-  </head>
+  <!-- <label for="trigger">
+    <ul id="secciones">
+      <li class="item1"><h3>Mis libros leidos</h3></li>
+      <li class="item2"><h3>Últimos libros subidos</h3></li>
+    </ul>
+  </label> -->
 
-  <body>
+  <input id="item1" type="radio" name="secciones" value="Mis libros leidos" hidden checked>
+  <input id="item2" type="radio" name="secciones" value="Últimos libros subidos" hidden>
 
-    <header id="cabezera">
-
-      <section class="login1">
-        <p>Bienvenido, <span id="user">Juanico</span></p>
-        <a href="index.html">Cerrar sesión</a>
-      </section>
-
-      <section>
-        <a href="index2.html"><img  class="logo" src="imagenes/libro_logo.png"></a>
-      </section>
-
-      <section class="titulo">
-        <a href="index2.html"><h1>BOOKSPLAT</h1></a>
-      </section>
-
-    </header>
-
-    <nav id="navbar">
-
-      <!-- <div class="button">
-        <input id="toggle" checked type="checkbox" value="1" style="display:none;"><i style="color:white;"class="fa fa-bars"></i>
-        <label for="toggle"></label>
-      </div> -->
-
-      <!-- <span class="span2"  tabindex="0"><i style="color:white;"class="fa fa-bars"></i></span> -->
+  <div id="secciones">
+    <label class="item1" for="item1"><h3>Mis libros leidos</h3></label>
+    <label class="item2" for="item2"><h3>Últimos libros subidos</h3></label>
+  </div>
 
 
-      <input id="show" type="checkbox" name="" value="">
-      <label id="ham" for="show"><i style="color:white;"class="fa fa-bars"></i></label>
+  <!-- <input id="trigger" type="checkbox"> -->
 
-      <ul class="alert">
-        <li><a class="active" href="mislibros.html">Mis libros</a></li>
-        <li><a href="foro.html">Foro</a></li>
-        <li><a href="datospersonales.html">Mis datos</a></li>
-        <li><a href="recomendaciones_u1.html">Mis recomendaciones</a></li>
-        <li><a class="exit" style="background-color: red;" href="index.html">Cerrar sesión</a></li>
+  <article id="libros_leidos">
+
+
+    <div class="box">
+      <ul class="lista">
+
+
+        <li class="item">
+          <a href="libroleido1.php"><h4 class="titulo">La cascada mágica</h4></a>
+          <a href="libroleido1.php"><img class="portada"src="imagenes/portada2.jpg" alt=""></a>
+          <p class="descripcion">Camelia es un hada madrina que lleva trescientos años ayudando con gran eficacia a jóvenes doncellas y aspirantes a héroe para que alcancen sus propios finales felices. Su magia y su ingenio nunca le han fallado, pero todo empieza a complicarse cuando le encomiendan a Simón, un mozo de cuadra que necesita su ayuda desesperadamente. Camelia ha solucionado casos más difíciles; pero, por algún motivo, con Simón las cosas comienzan a torcerse de forma inexplicable…</p>
+          <p class="autor">Autor</p>
+        </li>
+
+        <hr>
+
+        <li class="item">
+          <a href="#"><h4 class="titulo">Cómo querer a un robot</h4></a>
+          <a href="#"><img class="portada"src="imagenes/portada4.jpg" alt=""></a>
+          <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque, felis sed iaculis hendrerit, libero nibh iaculis elit, et lacinia metus purus quis augue. Mauris varius lectus risus, a interdum ex auctor et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ut fringilla purus. Maecenas finibus dignissim dictum. In hac habitasse platea dictumst. Proin a dui faucibus, congue diam ac, condimentum mi. In hac habitasse platea dictumst. Nam semper justo vitae purus accumsan, quis sollicitudin mauris congue. Suspendisse rutrum ex sit amet justo venenatis ullamcorper. Donec porttitor turpis amet placerat condimentum. Etiam dictum, mauris ultricies blandit gravida, elit justo tempus turpis, vel tincidunt nisl velit sit amet justo.</p>
+          <p class="autor">Autor</p>
+        </li>
+
+        <hr>
+
+        <li class="item">
+          <a href="#"><h4 class="titulo">Cielos de una ciudad</h4></a>
+          <a href="#"><img class="portada"src="imagenes/portada5.jpg" alt=""></a>
+          <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque, felis sed iaculis hendrerit, libero nibh iaculis elit, et lacinia metus purus quis augue. Mauris varius lectus risus, a interdum ex auctor et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ut fringilla purus. Maecenas finibus dignissim dictum. In hac habitasse platea dictumst. Proin a dui faucibus, congue diam ac, condimentum mi. In hac habitasse platea dictumst. Nam semper justo vitae purus accumsan, quis sollicitudin mauris congue. Suspendisse rutrum ex sit amet justo venenatis ullamcorper. Donec porttitor turpis amet placerat condimentum. Etiam dictum, mauris ultricies blandit gravida, elit justo tempus turpis, vel tincidunt nisl velit sit amet justo.</p>
+          <p class="autor">Autor</p>
+        </li>
+
+        <hr>
+
+        <li class="item">
+          <a href="#"><h4 class="titulo">Malvivir</h4></a>
+          <a href="#"><img class="portada"src="imagenes/portada1.jpg" alt=""></a>
+          <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque, felis sed iaculis hendrerit, libero nibh iaculis elit, et lacinia metus purus quis augue. Mauris varius lectus risus, a interdum ex auctor et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ut fringilla purus. Maecenas finibus dignissim dictum. In hac habitasse platea dictumst. Proin a dui faucibus, congue diam ac, condimentum mi. In hac habitasse platea dictumst. Nam semper justo vitae purus accumsan, quis sollicitudin mauris congue. Suspendisse rutrum ex sit amet justo venenatis ullamcorper. Donec porttitor turpis amet placerat condimentum. Etiam dictum, mauris ultricies blandit gravida, elit justo tempus turpis, vel tincidunt nisl velit sit amet justo.</p>
+          <p class="autor">Autor</p>
+        </li>
+
+
       </ul>
+    </div>
+  </article>
 
-      <ul class="menu">
-        <li><a class="active" href="mislibros.html">Mis libros</a></li>
-        <li><a href="foro.html">Foro</a></li>
-        <li><a href="datospersonales.html">Mis datos</a></li>
-        <li><a href="recomendaciones_u1.html">Mis recomendaciones</a></li>
-        <li><a href="#"></a></li>
-      </ul>
-    </nav>
+  <article id="ultimos_subidos">
 
+    <div class="box">
+    <ul class="lista">
 
-    <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-    <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-    <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-    <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-    <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-    <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+      <li class="item">
+        <a href="libro1.php"><h4 class="titulo">La cascada mágica</h4></a>
+        <p class="autor">Javier Torres</p>
+      </li>
 
-    <section id="cuerpo">
+      <hr>
+      <li class="item">
+        <a href="libro1.php"><h4 class="titulo">Memorias de otra vida</h4></a>
+        <p class="autor">Marie Cat</p>
+      </li>
 
-      <!-- <label for="trigger">
-        <ul id="secciones">
-          <li class="item1"><h3>Mis libros leidos</h3></li>
-          <li class="item2"><h3>Últimos libros subidos</h3></li>
-        </ul>
-      </label> -->
+      <hr>
 
-      <input id="item1" type="radio" name="secciones" value="Mis libros leidos" hidden checked>
-      <input id="item2" type="radio" name="secciones" value="Últimos libros subidos" hidden>
+      <li class="item">
+        <a href="libro1.php"><h4 class="titulo">ODA</h4></a>
+        <p class="autor">Julia Viernes</p>
+      </li>
 
-      <div id="secciones">
-        <label class="item1" for="item1"><h3>Mis libros leidos</h3></label>
-        <label class="item2" for="item2"><h3>Últimos libros subidos</h3></label>
-      </div>
+      <hr>
 
+      <li class="item">
+        <a href="libro1.php"><h4 class="titulo">El santo de la isla</h4></a>
+        <p class="autor">Juan Penurias</p>
+      </li>
 
-      <!-- <input id="trigger" type="checkbox"> -->
+      <hr>
 
-      <article id="libros_leidos">
+      <li class="item">
+        <a href="libro1.php"><h4 class="titulo">Cómo vivir sin perder la vida</h4></a>
+        <p class="autor">Fereica Pitrovic</p>
+      </li>
 
+      <hr>
 
-        <div class="box">
-          <ul class="lista">
+      <li class="item">
+        <a href="libro1.php"><h4 class="titulo">Redes Computacionales</h4></a>
+        <p class="autor">Estrella Levante</p>
+      </li>
 
+      <hr>
 
-            <li class="item">
-              <a href="libroleido1.html"><h4 class="titulo">La cascada mágica</h4></a>
-              <a href="libroleido1.html"><img class="portada"src="imagenes/portada2.jpg" alt=""></a>
-              <p class="descripcion">Camelia es un hada madrina que lleva trescientos años ayudando con gran eficacia a jóvenes doncellas y aspirantes a héroe para que alcancen sus propios finales felices. Su magia y su ingenio nunca le han fallado, pero todo empieza a complicarse cuando le encomiendan a Simón, un mozo de cuadra que necesita su ayuda desesperadamente. Camelia ha solucionado casos más difíciles; pero, por algún motivo, con Simón las cosas comienzan a torcerse de forma inexplicable…</p>
-              <p class="autor">Autor</p>
-            </li>
+      <li class="item">
+        <a href="libro1.php"><h4 class="titulo">Semáforo</h4></a>
+        <p class="autor">Pedro Saltador</p>
+      </li>
 
-            <hr>
+      <hr>
 
-            <li class="item">
-              <a href="#"><h4 class="titulo">Cómo querer a un robot</h4></a>
-              <a href="#"><img class="portada"src="imagenes/portada4.jpg" alt=""></a>
-              <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque, felis sed iaculis hendrerit, libero nibh iaculis elit, et lacinia metus purus quis augue. Mauris varius lectus risus, a interdum ex auctor et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ut fringilla purus. Maecenas finibus dignissim dictum. In hac habitasse platea dictumst. Proin a dui faucibus, congue diam ac, condimentum mi. In hac habitasse platea dictumst. Nam semper justo vitae purus accumsan, quis sollicitudin mauris congue. Suspendisse rutrum ex sit amet justo venenatis ullamcorper. Donec porttitor turpis amet placerat condimentum. Etiam dictum, mauris ultricies blandit gravida, elit justo tempus turpis, vel tincidunt nisl velit sit amet justo.</p>
-              <p class="autor">Autor</p>
-            </li>
+      <li class="item">
+        <a href="libro1.php"><h4 class="titulo">La noche estrellada</h4></a>
+        <p class="autor">Aitor Menta</p>
+      </li>
 
-            <hr>
-
-            <li class="item">
-              <a href="#"><h4 class="titulo">Cielos de una ciudad</h4></a>
-              <a href="#"><img class="portada"src="imagenes/portada5.jpg" alt=""></a>
-              <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque, felis sed iaculis hendrerit, libero nibh iaculis elit, et lacinia metus purus quis augue. Mauris varius lectus risus, a interdum ex auctor et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ut fringilla purus. Maecenas finibus dignissim dictum. In hac habitasse platea dictumst. Proin a dui faucibus, congue diam ac, condimentum mi. In hac habitasse platea dictumst. Nam semper justo vitae purus accumsan, quis sollicitudin mauris congue. Suspendisse rutrum ex sit amet justo venenatis ullamcorper. Donec porttitor turpis amet placerat condimentum. Etiam dictum, mauris ultricies blandit gravida, elit justo tempus turpis, vel tincidunt nisl velit sit amet justo.</p>
-              <p class="autor">Autor</p>
-            </li>
-
-            <hr>
-
-            <li class="item">
-              <a href="#"><h4 class="titulo">Malvivir</h4></a>
-              <a href="#"><img class="portada"src="imagenes/portada1.jpg" alt=""></a>
-              <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque, felis sed iaculis hendrerit, libero nibh iaculis elit, et lacinia metus purus quis augue. Mauris varius lectus risus, a interdum ex auctor et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ut fringilla purus. Maecenas finibus dignissim dictum. In hac habitasse platea dictumst. Proin a dui faucibus, congue diam ac, condimentum mi. In hac habitasse platea dictumst. Nam semper justo vitae purus accumsan, quis sollicitudin mauris congue. Suspendisse rutrum ex sit amet justo venenatis ullamcorper. Donec porttitor turpis amet placerat condimentum. Etiam dictum, mauris ultricies blandit gravida, elit justo tempus turpis, vel tincidunt nisl velit sit amet justo.</p>
-              <p class="autor">Autor</p>
-            </li>
+      <hr>
 
 
-          </ul>
-        </div>
-      </article>
+      <section class="altalibro">
+        <a href="altalibro.php">Dar de alta nuevo libro</a>
+      </section>
 
-      <article id="ultimos_subidos">
-
-        <div class="box">
-        <ul class="lista">
-
-          <li class="item">
-            <a href="libro1.html"><h4 class="titulo">La cascada mágica</h4></a>
-            <p class="autor">Javier Torres</p>
-          </li>
-
-          <hr>
-          <li class="item">
-            <a href="libro1.html"><h4 class="titulo">Memorias de otra vida</h4></a>
-            <p class="autor">Marie Cat</p>
-          </li>
-
-          <hr>
-
-          <li class="item">
-            <a href="libro1.html"><h4 class="titulo">ODA</h4></a>
-            <p class="autor">Julia Viernes</p>
-          </li>
-
-          <hr>
-
-          <li class="item">
-            <a href="libro1.html"><h4 class="titulo">El santo de la isla</h4></a>
-            <p class="autor">Juan Penurias</p>
-          </li>
-
-          <hr>
-
-          <li class="item">
-            <a href="libro1.html"><h4 class="titulo">Cómo vivir sin perder la vida</h4></a>
-            <p class="autor">Fereica Pitrovic</p>
-          </li>
-
-          <hr>
-
-          <li class="item">
-            <a href="libro1.html"><h4 class="titulo">Redes Computacionales</h4></a>
-            <p class="autor">Estrella Levante</p>
-          </li>
-
-          <hr>
-
-          <li class="item">
-            <a href="libro1.html"><h4 class="titulo">Semáforo</h4></a>
-            <p class="autor">Pedro Saltador</p>
-          </li>
-
-          <hr>
-
-          <li class="item">
-            <a href="libro1.html"><h4 class="titulo">La noche estrellada</h4></a>
-            <p class="autor">Aitor Menta</p>
-          </li>
-
-          <hr>
+    </ul>
+    </div>
 
 
-          <section class="altalibro">
-            <a href="altalibro.html">Dar de alta nuevo libro</a>
-          </section>
+  </article>
 
-        </ul>
-        </div>
-
-
-      </article>
-
-    </section>
-
-<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-
-<footer id="pie">
-  <section>
-    <a id="contacto" href="mailto:davidgilbautista@gmail.com">Contacto</a>
-    <a id="pdf" href="como_se_hizo.pdf"><p>Cómo se hizo</p></a>
-  </section>
-</footer>
-
-  </body>
-
-</html>
+</section>
