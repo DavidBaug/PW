@@ -1,6 +1,6 @@
 <?php
 
-    require_once('db.php');
+    require('db.php');
 
     // Si no sesion
     if(!isset($_SESSION["username"])){
@@ -19,10 +19,17 @@
               $_SESSION['error']= "0";
               mysqli_close($conn);
 
+              $message = "Alta correcta";
+              echo "<script type='text/javascript'>alert('$message');</script>";
+
               header("Location: ./index.php");
           } else { // Si falla vuelta a registrar
               $_SESSION['error']= "1";
               mysqli_close($conn);
+
+              $message = "Error en alta";
+              echo "<script type='text/javascript'>alert('$message');</script>";
+
 
               header("Location: ./altausuario.php");
           }
@@ -30,11 +37,19 @@
             $_SESSION['error']= "1";
             mysqli_close($conn);
 
+            // $message = "Error en alta";
+            // echo "<script type='text/javascript'>alert('$message');</script>";
+
+
             header("Location: ./altausuario.php");
         }
     } else { // Si ya hay sesión
         $_SESSION['error']= "1";
         mysqli_close($conn);
+
+        $message = "Ya hay una sesión abierta";
+        echo "<script type='text/javascript'>alert('$message');</script>";
+
 
         header("Location: ./index.php");
     }

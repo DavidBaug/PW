@@ -1,6 +1,6 @@
 <header id="cabezera">
   <section class="login">
-    <form method="post">
+    <form method="post" action="login.php">
       <input class="items" type="text" name="username" value="" placeholder="Usuario" required>
       <br>
       <input class="items" type="password" name="password" value="" placeholder="Contraseña" required>

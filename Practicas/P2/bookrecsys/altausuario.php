@@ -1,29 +1,17 @@
-<!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Booksplat</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <meta name=”viewport” content=”width=device-width”>
-
-
-    <link rel="stylesheet" href="style.css">
-  </head>
+  <?php require("head.php"); ?>
 
   <body>
 
     <?php
-      require_once "header_login.php";
-      require_once "navbar_login.php";
+      require("header_login.php");
+      require("navbar_login.php");
 
     ?>
 
-
         <section id="cuerpo">
 
-          <form id="registro" method="post">
+          <form id="registro" method="post" action="registration.php">
             <h2 style="width: -webkit-fill-available;text-align: -webkit-center;">Registro</h2>
             <section class="izq">
               <img class="portada" src="imagenes/noimagen.png" >
@@ -51,11 +39,10 @@
         </section>
 
         <?php
-          require_once "footer.php";
+          require("footer.php");
         ?>
 
 
     </body>
-
 
     </html>
