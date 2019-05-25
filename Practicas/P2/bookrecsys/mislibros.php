@@ -34,7 +34,102 @@ echo '
   </nav>
 ';
 
-require('html/mislibros.html');
+echo '
+<article id="libros_leidos">
+  <div class="box">
+    <ul class="lista">';
+
+$username = $_SESSION["username"];
+
+$sql = "SELECT id FROM libro_valorado where username='$username';";
+
+$result =  mysqli_query($conn, $sql);
+
+$row = mysqli_fetch_assoc($result);
+
+if (mysqli_num_rows($result) > 0) {
+    while($row = mysqli_fetch_assoc($result)) {
+
+      $id = $row["id"];
+
+      $sql = "SELECT title,description,autor,img FROM libro where id='$id';";
+      $result =  mysqli_query($conn, $sql);
+      $row1 = mysqli_fetch_assoc($result);
+
+      echo '
+      <li class="item">
+        <a href="libroleido1.php"><h4 class="titulo">'. $row1["title"].'</h4></a>
+        <a href="libroleido1.php"><img class="portada"src="'. $row1["img"].'" alt=""></a>
+        <p class="descripcion">'. $row1["descripcion"].'</p>
+        <p class="autor">'. $row1["autor"].'</p>
+      </li>
+      <hr>
+      ';
+
+    }
+} else {
+    echo "0 results";
+}
+
+
+echo '
+    </ul>
+  </div>
+</article>
+';
+
+
+
+
+
+echo '
+<article id="ultimos_subidos">
+
+  <div class="box">
+  <ul class="lista">
+
+  ';
+
+  $sql = "SELECT id FROM libro_valorado;";
+
+  $result =  mysqli_query($conn, $sql);
+
+  $row = mysqli_fetch_assoc($result);
+
+  if (mysqli_num_rows($result) > 0) {
+      while($row = mysqli_fetch_assoc($result)) {
+
+        $id = $row["id"];
+
+        $sql = "SELECT title,autor FROM libro where id='$id';";
+        $result =  mysqli_query($conn, $sql);
+        $row1 = mysqli_fetch_assoc($result);
+
+        echo '
+        <li class="item">
+          <a href="libro1.php"><h4 class="titulo">'. $row1["title"].'</h4></a>
+          <p class="autor">'. $row1["autor"].'</p>
+        </li>
+
+        <hr>
+        ';
+
+      }
+  } else {
+      echo "0 results";
+  }
+
+  echo'
+      </ul>
+    </div>
+  </article>
+  ';
+
+
+
+
+
+
 
 
 require('footer.php');
