@@ -5,7 +5,7 @@
     // if(isset($_SESSION["username"])  && $_POST['username']){
     //   $username = $_POST['username'];
     //
-    //   $old = isset($_SESSION["username"]);
+    //   $old = $_SESSION["username"];
     //
     //   $sql = "SELECT * FROM usuario WHERE username='$username';";
     //
@@ -18,10 +18,9 @@
     //         $_SESSION['error']= "0";
     //         // mysqli_close($conn);
     //
-    //         $message = "Alta correcta";
-    //         echo "<script type='text/javascript'>alert('$message');</script>";
     //
-    //         header("Location: ./index.php");
+    //         // header("Location: ./index.php");
+    //
     //     } else { // Si falla vuelta a registrar
     //         $_SESSION['error']= "1";
     //         // mysqli_close($conn);
@@ -35,11 +34,40 @@
     //
     //   }
     // }
+    if(isset($_SESSION["username"]) && $_POST['username']){
+      $username = $_POST['username'];
+
+      $old = $_SESSION["username"];
+
+
+      $sql = "UPDATE usuario SET username = '$username' WHERE username = '$old';";
+
+      if (mysqli_query($conn, $sql)) {
+          $_SESSION['error']= "0";
+          // mysqli_close($conn);
+
+          $message = "caca";
+          echo "<script type='text/javascript'>alert('$message');</script>";
+
+          // header("Location: ./index.php");
+      } else { // Si falla vuelta a registrar
+          $_SESSION['error']= "1";
+          // mysqli_close($conn);
+
+          $message = "Error en alta";
+          echo "<script type='text/javascript'>alert('$message');</script>";
+
+
+          // header("Location: ./datospersonales.php");
+      }
+
+
+    }
 
     if(isset($_SESSION["name"]) && $_POST['name']){
       $name = $_POST['name'];
 
-      $old = isset($_SESSION["username"]);
+      $old = $_SESSION["username"];
 
       $sql = "UPDATE usuario SET name = '$name' WHERE username = '$old';";
 
@@ -47,10 +75,8 @@
           $_SESSION['error']= "0";
           // mysqli_close($conn);
 
-          $message = "Alta correcta";
-          echo "<script type='text/javascript'>alert('$message');</script>";
 
-          header("Location: ./index.php");
+          // header("Location: ./index.php");
       } else { // Si falla vuelta a registrar
           $_SESSION['error']= "1";
           // mysqli_close($conn);
@@ -68,18 +94,14 @@
     if(isset($_SESSION["lastname"]) && $_POST['lastname']){
       $lastname = $_POST['lastname'];
 
-      $old = isset($_SESSION["username"]);
-
+      $old = $_SESSION["username"];
       $sql = "UPDATE usuario SET lastname = '$lastname' WHERE username = '$old';";
 
       if (mysqli_query($conn, $sql)) {
           $_SESSION['error']= "0";
           // mysqli_close($conn);
 
-          $message = "Alta correcta";
-          echo "<script type='text/javascript'>alert('$message');</script>";
-
-          header("Location: ./index.php");
+          // header("Location: ./index.php");
       } else { // Si falla vuelta a registrar
           $_SESSION['error']= "1";
           // mysqli_close($conn);
@@ -97,18 +119,16 @@
     if(isset($_SESSION["mail"]) && $_POST['email']){
       $email = $_POST['email'];
 
-      $old = isset($_SESSION["username"]);
-
+      $old = $_SESSION["username"];
       $sql = "UPDATE usuario SET mail = '$email' WHERE username = '$old';";
 
       if (mysqli_query($conn, $sql)) {
           $_SESSION['error']= "0";
           // mysqli_close($conn);
 
-          $message = "Alta correcta";
-          echo "<script type='text/javascript'>alert('$message');</script>";
 
-          header("Location: ./index.php");
+
+          // header("Location: ./index.php");
       } else { // Si falla vuelta a registrar
           $_SESSION['error']= "1";
           // mysqli_close($conn);
@@ -124,20 +144,17 @@
     }
 
     if(isset($_SESSION["password"]) && $_POST['password']){
-      $email = $_POST['password'];
+      $password = $_POST['password'];
 
-      $old = isset($_SESSION["username"]);
-
+      $old = $_SESSION["username"];
       $sql = "UPDATE usuario SET passwd = '$password' WHERE username = '$old';";
 
       if (mysqli_query($conn, $sql)) {
           $_SESSION['error']= "0";
           // mysqli_close($conn);
 
-          $message = "Alta correcta";
-          echo "<script type='text/javascript'>alert('$message');</script>";
 
-          header("Location: ./index.php");
+          // header("Location: ./index.php");
       } else { // Si falla vuelta a registrar
           $_SESSION['error']= "1";
           // mysqli_close($conn);
@@ -151,6 +168,12 @@
 
 
     }
+
+    // $message = "Alta correcta";
+    // echo "<script type='text/javascript'>alert('$message');</script>";
+    //
+    // header("Location: ./index.php");
+
 
     mysqli_close($conn);
 
