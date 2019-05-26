@@ -13,6 +13,8 @@ require('db.php');
   }
 
   if (mysqli_num_rows($result) > 0) {
+        session_start();
+
         $row = mysqli_fetch_assoc($result);
 
         $_SESSION['username']= $row["username"];
@@ -23,6 +25,7 @@ require('db.php');
 
         $message = "Usuario y contraseña correctos";
         echo "<script type='text/javascript'>alert('$message');</script>";
+
 
     }
     else{

@@ -10,7 +10,7 @@
 
 ## Índice
 
-- ### [Estructura base de datos](#id1)
+- ### [Usuarios y libros](#id1)
 
 - ### algo
 
@@ -24,7 +24,7 @@
 
 <div id='id1' />
 
-## Estructura base de datos
+## Usuarios y libros
 
 
 
@@ -35,6 +35,12 @@ Para comenzar debemos crear la base de datos y estructurar las tablas que usarem
 ![./1.PNG](./1.PNG)
 
 En la tabla del **libro valorado** podemos ver que tenemos una clave múltiple que hace referencia a la tabla **libro** y a la tabla **usuario**, es decir, para poder crear la opinión de un libro deberá existir el libro y el usuario. Cosa que puede hacer que a la hora de introducir un libro nuevo con su opinión nos cause algún problema, pero veremos cómo resolverlo después.
+
+Y en **libro** tendremos una clave que iremos aumentando conforme insertemos tuplas.
+
+Para crear e insertar tuplas de las instancias anteriores he creado archivos específicos que realizan estas acciones tras completar el formulario y enviarlo. He optado por recoger todas las valoraciones sobre un libro en distintas tablas, cosa que nos facilitará mostrar los libros leídos en la sección mis libros y calcular la valoración media de un ejemplar específico.
+
+
 
 
 
