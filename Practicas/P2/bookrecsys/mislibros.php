@@ -26,7 +26,7 @@
         <li><a href="foro.php">Foro</a></li>
         <li><a href="datospersonales.php">Mis datos</a></li>
         <li><a href="recomendaciones_u1.php">Mis recomendaciones</a></li>
-        <li><a class="exit" style="background-color: red;" href="index.php">Cerrar sesión</a></li>
+        <li><a class="exit" style="background-color: red;" href="logout.php">Cerrar sesión</a></li>
       </ul>
 
       <ul class="menu">
@@ -83,8 +83,8 @@
 
                     echo '
                     <li class="item">
-                      <a href="libroleido1.php"><h4 class="titulo">'. $row1["title"].'</h4></a>
-                      <a href="libroleido1.php"><img class="portada"src="'. $row1["img"].'" alt=""></a>
+                      <a href="libroleido.php?id='.$id.'"><h4 class="titulo">'. $row1["title"].'</h4></a>
+                      <a href="libroleido.php?id='.$id.'"><img class="portada"src="'. $row1["img"].'" alt=""></a>
                       <p class="descripcion">'. $row1["description"].'</p>
                       <p class="autor">'. $row1["autor"].'</p>
                     </li>
@@ -97,6 +97,8 @@
               }
 
              ?>
+
+
 
 
           </ul>
