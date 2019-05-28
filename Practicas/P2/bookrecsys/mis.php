@@ -22,18 +22,18 @@
       <label id="ham" for="show"><i style="color:white;"class="fa fa-bars"></i></label>
 
       <ul class="alert">
-        <li><a class="active" href="mislibros.php">Mis libros</a></li>
-        <li><a href="foro.php">Foro</a></li>
-        <li><a href="datospersonales.php">Mis datos</a></li>
-        <li><a href="recomendaciones_u1.php">Mis recomendaciones</a></li>
-        <li><a class="exit" style="background-color: red;" href="index.php">Cerrar sesión</a></li>
+        <li><a class="active" href="mislibros.html">Mis libros</a></li>
+        <li><a href="foro.html">Foro</a></li>
+        <li><a href="datospersonales.html">Mis datos</a></li>
+        <li><a href="recomendaciones_u1.html">Mis recomendaciones</a></li>
+        <li><a class="exit" style="background-color: red;" href="index.html">Cerrar sesión</a></li>
       </ul>
 
       <ul class="menu">
-        <li><a class="active" href="mislibros.php">Mis libros</a></li>
-        <li><a href="foro.php">Foro</a></li>
-        <li><a href="datospersonales.php">Mis datos</a></li>
-        <li><a href="recomendaciones_u1.php">Mis recomendaciones</a></li>
+        <li><a class="active" href="mislibros.html">Mis libros</a></li>
+        <li><a href="foro.html">Foro</a></li>
+        <li><a href="datospersonales.html">Mis datos</a></li>
+        <li><a href="recomendaciones_u1.html">Mis recomendaciones</a></li>
         <li><a href="#"></a></li>
       </ul>
     </nav>
@@ -113,31 +113,24 @@
 
             $result =  mysqli_query($conn, $sql);
 
-            // Mostrar no repes
-            $mostrados = array();
-
-
             if (mysqli_num_rows($result) > 0) {
                 while($row = mysqli_fetch_assoc($result)) {
 
                   $id = $row["id"];
 
-                  if (!in_array($id, $mostrados)) {
-                    $mostrados = array_push($mostrados, $id);
+                  $sql = "SELECT title,autor FROM libro where id='$id';";
+                  $result =  mysqli_query($conn, $sql);
+                  $row1 = mysqli_fetch_assoc($result);
 
-                    $sql = "SELECT title,autor FROM libro where id='$id';";
-                    $result =  mysqli_query($conn, $sql);
-                    $row1 = mysqli_fetch_assoc($result);
+                  echo '
+                  <li class="item">
+                    <a href="libro1.php"><h4 class="titulo">'. $row1["title"].'</h4></a>
+                    <p class="autor">'. $row1["autor"].'</p>
+                  </li>
 
-                    echo '
-                    <li class="item">
-                      <a href="libro1.php"><h4 class="titulo">'. $row1["title"].'</h4></a>
-                      <p class="autor">'. $row1["autor"].'</p>
-                    </li>
+                  <hr>
+                  ';
 
-                    <hr>
-                    ';
-                  }
                 }
             } else {
                 echo "<p>No hay libros valorados</p>";
@@ -145,7 +138,7 @@
            ?>
 
           <section class="altalibro">
-            <a href="altalibro.php">Dar de alta nuevo libro</a>
+            <a href="altalibro.html">Dar de alta nuevo libro</a>
           </section>
 
         </ul>

@@ -14,13 +14,15 @@
           $anio = $_POST['anio'];
           $editor = $_POST['editor'];
           $descripcion = $_POST['descripcion'];
+          $img = "imagenes/" . $_POST['img'] . ".jpg";
+
 
           $opinion = $_POST['opinion'];
           $valoracion = $_POST['valoracion'];
 
           $username = $_SESSION['username'];
 
-          $sql = "INSERT INTO libro(id,title,autor,editorial,year,editor,description,img) VALUES(DEFAULT,'$title', '$autor', '$editorial', '$anio', '$editor','$descripcion', NULL);";
+          $sql = "INSERT INTO libro(id,title,autor,editorial,year,editor,description,img) VALUES(DEFAULT,'$title', '$autor', '$editorial', '$anio', '$editor','$descripcion', '$img');";
 
 
           // Si no falla consulta vuelta a index

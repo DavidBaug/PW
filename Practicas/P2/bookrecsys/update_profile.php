@@ -46,10 +46,11 @@
           $_SESSION['error']= "0";
           // mysqli_close($conn);
 
-          $message = "caca";
-          echo "<script type='text/javascript'>alert('$message');</script>";
-
+          // $message = "Datos cambiados";
+          // echo "<script type='text/javascript'>alert('$message');</script>";
+          //
           // header("Location: ./index.php");
+
       } else { // Si falla vuelta a registrar
           $_SESSION['error']= "1";
           // mysqli_close($conn);
@@ -58,7 +59,7 @@
           echo "<script type='text/javascript'>alert('$message');</script>";
 
 
-          // header("Location: ./datospersonales.php");
+          header("Location: ./datospersonales.php");
       }
 
 
@@ -169,12 +170,12 @@
 
     }
 
-    // $message = "Alta correcta";
-    // echo "<script type='text/javascript'>alert('$message');</script>";
-    //
-    // header("Location: ./index.php");
+    $message = "Datos cambiados";
+    echo "<script type='text/javascript'>alert('$message');</script>";
 
-
+    // Datos cambiados - echamos a usuario
     mysqli_close($conn);
+    require("logout.php")
+
 
 ?>

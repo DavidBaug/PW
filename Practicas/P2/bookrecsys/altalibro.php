@@ -41,7 +41,19 @@ echo '
   <section class="top_info">
     <div class="imagen_alta">
       <img class="portada" src="imagenes/noimagen.png" >
-      <button type="button" name="button">Cargar imagen</button>
+      <select name="img" required>
+        <option value="" selected="true" disabled="disabled">Selecciona una portada</option>
+        <option value="portada1">Portada 1</option>
+        <option value="portada2">Portada 2</option>
+        <option value="portada3">Portada 3</option>
+        <option value="portada4">Portada 4</option>
+        <option value="portada5">Portada 5</option>
+        <option value="portada6">Portada 6</option>
+        <option value="portada7">Portada 7</option>
+        <option value="portada8">Portada 8</option>
+        <option value="portada9">Portada 9</option>
+      </select>
+
     </div>
 
 
