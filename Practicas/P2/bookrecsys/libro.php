@@ -63,7 +63,7 @@
 
       $row = mysqli_fetch_assoc($result);
 
-      $sql1 = "SELECT opinion, rating, username FROM libro_valorado where id='$id';";
+      $sql1 = "SELECT rating FROM libro_valorado where id='$id';";
       $result1 =  mysqli_query($conn, $sql1);
 
       $valoracion = calculaValoracion($result1);
@@ -72,7 +72,6 @@
       echo '
       <article id="libro">
 
-      <article id="libro">
 
         <section class="top_info">
           <img class="portada" src="'.$row["img"].'" >
@@ -102,15 +101,12 @@
 
         </section>
 
-        <section class="bot_info">
+
+        <article class="bot_info">
           <section class="descripcion">
             <p>Descripción</p>
             <p>'.$row["description"].'</p>
           </section>
-
-          ';
-
-          echo '
 
           <p style="text-align:center;">Valoración media: '.$valoracion.'</p>
 
@@ -121,31 +117,47 @@
         <h4 style="text-align:center;">Opiniones</h4>
         <article class="opiniones">';
 
-        while($row = mysqli_fetch_assoc($result1)) {
+          $sql2 = "SELECT username,opinion FROM libro_valorado where id='$id';";
+          $result2 =  mysqli_query($conn, $sql2);
 
-            echo'
-            <section class="item">
-              <p>'.$row["username"].'</p>
-              <p>'.$row["opinion"].'</p>
-            </section>';
-
-        }
+          while($row = mysqli_fetch_assoc($result2)) {
+              echo'
+              <section class="item">
+                <p>'.$row["username"].'</p>
+                <p>'.$row["opinion"].'</p>
+              </section>';
+          }
 
           echo'
 
+          </article>
+
+          <section class="opiniones_navegacion">
+            <a href="#">Anterior</a>
+            <a href="#">Siguiente</a>
+          </section>
+
+          <section class="alta">';
+
+          $sql = "SELECT * FROM libro_valorado WHERE username= '$username' AND id= '$id'";
+          $result = mysqli_query($conn, $sql);
+
+          // No permitir crear más de una opinión
+          if (mysqli_num_rows($result) > 0) {
+            echo '
+              <a href="update_opinion.php?id='.$id.'">Valorar libro</a>
+            ';
+          }else{
+            echo '
+              <a href="valoracion_libro.php?id='.$id.'">Valorar libro</a>
+            ';
+          }
+
+          echo'
+          </section>
+
+
         </article>
-
-        <section class="opiniones_navegacion">
-          <a href="libro1a.php">Anterior</a>
-          <a href="libro1b.php">Siguiente</a>
-        </section>
-
-        <section class="alta">
-          <a href="valoracion_libro.php?id='.$id.'">Valorar libro</a>
-        </section>
-
-
-      </article>
 
       ';
 
