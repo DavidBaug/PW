@@ -100,62 +100,24 @@
           <p>'.$row["description"].'</p>
         </section>
 
-        <form class="" action="update_opinion.php?id='.$id.'" method="post">
+        <form class="" action="create_opinion.php?id='.$id.'" method="post">
           <section class="opinion">
             <p>Opinión</p>
-            <textarea name="opinion" rows="8" cols="100" placeholder="'.$row1["opinion"].'"></textarea>
+            <textarea name="opinion" rows="8" cols="100"></textarea>
 
           </section>
 
           <section class="valoracion">
             <p>Mi valoración</p>
-            ';
-            if($row1["rating"]==1) {
-                echo '
-                <input type="radio" name="valoracion" value="1" checked> 1
-                <input type="radio" name="valoracion" value="2" > 2
-                <input type="radio" name="valoracion" value="3" > 3
-                <input type="radio" name="valoracion" value="4" > 4
-                <input type="radio" name="valoracion" value="5" > 5
-                ';
-              }elseif ($row1["rating"]==2) {
-                echo '
-                <input type="radio" name="valoracion" value="1" > 1
-                <input type="radio" name="valoracion" value="2" checked> 2
-                <input type="radio" name="valoracion" value="3" > 3
-                <input type="radio" name="valoracion" value="4" > 4
-                <input type="radio" name="valoracion" value="5" > 5
-                ';
-              }elseif ($row1["rating"]==3) {
-                echo '
-                <input type="radio" name="valoracion" value="1" > 1
-                <input type="radio" name="valoracion" value="2" > 2
-                <input type="radio" name="valoracion" value="3" checked> 3
-                <input type="radio" name="valoracion" value="4" > 4
-                <input type="radio" name="valoracion" value="5" > 5
-                ';
-              }elseif ($row1["rating"]==4) {
-                echo '
-                <input type="radio" name="valoracion" value="1" > 1
-                <input type="radio" name="valoracion" value="2" > 2
-                <input type="radio" name="valoracion" value="3" > 3
-                <input type="radio" name="valoracion" value="4" checked> 4
-                <input type="radio" name="valoracion" value="5" > 5
-                ';
-              }elseif ($row1["rating"]==5) {
-                echo '
-                <input type="radio" name="valoracion" value="1" > 1
-                <input type="radio" name="valoracion" value="2" > 2
-                <input type="radio" name="valoracion" value="3" > 3
-                <input type="radio" name="valoracion" value="4" > 4
-                <input type="radio" name="valoracion" value="5" checked> 5
-                ';
-              }
-      echo '
+            <input type="radio" name="valoracion" value="1" > 1
+            <input type="radio" name="valoracion" value="2" > 2
+            <input type="radio" name="valoracion" value="3" > 3
+            <input type="radio" name="valoracion" value="4" > 4
+            <input type="radio" name="valoracion" value="5" > 5
           </section>
         </section>
 
-        <button class="submit" type="submit" name="button">Actualizar</button>
+        <button class="submit" type="submit" name="button">Valorar</button>
 
         </form>
 

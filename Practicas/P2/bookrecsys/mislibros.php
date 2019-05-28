@@ -133,7 +133,7 @@
 
                     echo '
                     <li class="item">
-                      <a href="libro1.php"><h4 class="titulo">'. $row1["title"].'</h4></a>
+                      <a href="libro.php?id='.$id.'"><h4 class="titulo">'. $row1["title"].'</h4></a>
                       <p class="autor">'. $row1["autor"].'</p>
                     </li>
 
