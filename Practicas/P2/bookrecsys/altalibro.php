@@ -19,7 +19,7 @@ echo '
     <li><a href="mislibros.php">Mis libros</a></li>
     <li><a href="foro.php">Foro</a></li>
     <li><a href="datospersonales.php">Mis datos</a></li>
-    <li><a href="recomendaciones_u1.php">Mis recomendaciones</a></li>
+    <li><a href="recomendaciones.php">Mis recomendaciones</a></li>
     <li><a class="exit" style="background-color: red;" href="logout.php">Cerrar sesión</a></li>
   </ul>
 
@@ -27,7 +27,7 @@ echo '
     <li><a href="mislibros.php">Mis libros</a></li>
     <li><a href="foro.php">Foro</a></li>
     <li><a href="datospersonales.php">Mis datos</a></li>
-    <li><a href="recomendaciones_u1.php">Mis recomendaciones</a></li>
+    <li><a href="recomendaciones.php">Mis recomendaciones</a></li>
     <li><a class="active" href="#">Alta libro</a></li>
   </ul>
 </nav>

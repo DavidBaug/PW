@@ -4,15 +4,16 @@
 
     // Si no sesion
     if(!isset($_SESSION["username"])){
-        if((isset($_POST['name'])) && (isset($_POST['lastname'])) && (isset($_POST['email'])) && (isset($_POST['password']))){
+        if((isset($_POST['name'])) && (isset($_POST['lastname'])) && (isset($_POST['email'])) && (isset($_POST['password'])) && (isset($_POST['img']))){
           // Conseguir datos y registrar usuario
           $username = $_POST['username'];
           $name = $_POST['name'];
           $lastname = $_POST['lastname'];
           $email = $_POST['email'];
           $password = $_POST['password'];
+          $img = "imagenes/" . $_POST['img'] . ".png";
 
-          $sql = "INSERT INTO usuario VALUES( '$username', '$name', '$lastname', '$email', '$password');";
+          $sql = "INSERT INTO usuario VALUES( '$username', '$name', '$lastname', '$email', '$password','$img');";
 
           // Si no falla consulta vuelta a index
           if (mysqli_query($conn, $sql)) {

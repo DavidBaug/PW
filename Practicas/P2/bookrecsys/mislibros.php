@@ -25,7 +25,7 @@
         <li><a class="active" href="mislibros.php">Mis libros</a></li>
         <li><a href="foro.php">Foro</a></li>
         <li><a href="datospersonales.php">Mis datos</a></li>
-        <li><a href="recomendaciones_u1.php">Mis recomendaciones</a></li>
+        <li><a href="recomendaciones.php">Mis recomendaciones</a></li>
         <li><a class="exit" style="background-color: red;" href="logout.php">Cerrar sesión</a></li>
       </ul>
 
@@ -33,7 +33,7 @@
         <li><a class="active" href="mislibros.php">Mis libros</a></li>
         <li><a href="foro.php">Foro</a></li>
         <li><a href="datospersonales.php">Mis datos</a></li>
-        <li><a href="recomendaciones_u1.php">Mis recomendaciones</a></li>
+        <li><a href="recomendaciones.php">Mis recomendaciones</a></li>
         <li><a href="#"></a></li>
       </ul>
     </nav>
@@ -77,9 +77,9 @@
 
                     $id = $row["id"];
 
-                    $sql = "SELECT title,description,autor,img FROM libro where id='$id';";
-                    $result =  mysqli_query($conn, $sql);
-                    $row1 = mysqli_fetch_assoc($result);
+                    $sql1 = "SELECT title,description,autor,img FROM libro where id='$id';";
+                    $result1 =  mysqli_query($conn, $sql1);
+                    $row1 = mysqli_fetch_assoc($result1);
 
                     echo '
                     <li class="item">
@@ -118,18 +118,17 @@
             // Mostrar no repes
             $mostrados = array();
 
-
             if (mysqli_num_rows($result) > 0) {
                 while($row = mysqli_fetch_assoc($result)) {
 
                   $id = $row["id"];
 
                   if (!in_array($id, $mostrados)) {
-                    $mostrados = array_push($mostrados, $id);
+                    array_push($mostrados, $id);
 
-                    $sql = "SELECT title,autor FROM libro where id='$id';";
-                    $result =  mysqli_query($conn, $sql);
-                    $row1 = mysqli_fetch_assoc($result);
+                    $sql1 = "SELECT title,autor FROM libro where id='$id';";
+                    $result1 =  mysqli_query($conn, $sql1);
+                    $row1 = mysqli_fetch_assoc($result1);
 
                     echo '
                     <li class="item">
@@ -144,6 +143,10 @@
             } else {
                 echo "<p>No hay libros valorados</p>";
             }
+
+
+
+
            ?>
 
           <section class="altalibro">

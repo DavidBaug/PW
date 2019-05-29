@@ -34,6 +34,9 @@
     //
     //   }
     // }
+
+    $salir = 0;
+
     if(isset($_SESSION["username"]) && $_POST['username']){
       $username = $_POST['username'];
 
@@ -50,6 +53,7 @@
           // echo "<script type='text/javascript'>alert('$message');</script>";
           //
           // header("Location: ./index.php");
+          $salir=1;
 
       } else { // Si falla vuelta a registrar
           $_SESSION['error']= "1";
@@ -154,6 +158,33 @@
           $_SESSION['error']= "0";
           // mysqli_close($conn);
 
+          $salir=1;
+
+          // header("Location: ./index.php");
+      } else { // Si falla vuelta a registrar
+          $_SESSION['error']= "1";
+          // mysqli_close($conn);
+
+          $message = "Error en alta";
+          echo "<script type='text/javascript'>alert('$message');</script>";
+
+
+          header("Location: ./datospersonales.php");
+      }
+
+
+    }
+
+    if(isset($_SESSION["img"]) && isset($_POST['img'])){
+      $img = "imagenes/" . $_POST['img'] . ".png";
+
+      $old = $_SESSION["username"];
+      $sql = "UPDATE usuario SET img = '$img' WHERE username = '$old';";
+
+      if (mysqli_query($conn, $sql)) {
+          $_SESSION['error']= "0";
+          // mysqli_close($conn);
+
 
           // header("Location: ./index.php");
       } else { // Si falla vuelta a registrar
@@ -175,7 +206,12 @@
 
     // Datos cambiados - echamos a usuario
     mysqli_close($conn);
-    require("logout.php")
+
+    if ($salir==1) {
+      require("logout.php");
+    }else{
+      header("Location: ./datospersonales.php");
+    }
 
 
 ?>

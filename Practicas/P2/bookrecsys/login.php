@@ -22,6 +22,7 @@ require('db.php');
         $_SESSION['lastname']= $row["lastname"];
         $_SESSION['mail']= $row["mail"];
         $_SESSION['password']= $row["passwd"];
+        $_SESSION['img']= $row["img"];
         $_SESSION['id'];
 
         $message = "Usuario y contraseña correctos";

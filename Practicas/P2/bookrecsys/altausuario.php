@@ -15,7 +15,15 @@
             <h2 style="width: -webkit-fill-available;text-align: -webkit-center;">Registro</h2>
             <section class="izq">
               <img class="portada" src="imagenes/noimagen.png" >
-              <button type="button" name="button">Cargar imagen</button>
+              <select name="img" required>
+                <option value="" selected="true" disabled="disabled">Selecciona una foto</option>
+                <option value="perfil">Perfil 1</option>
+                <option value="perfil1">Perfil 2</option>
+                <option value="perfil2">Perfil 3</option>
+                <option value="perfil3">Perfil 4</option>
+                <option value="perfil4">Perfil 5</option>
+                <option value="perfil5">Perfil 6</option>
+              </select>
             </section>
 
             <section class="der">
