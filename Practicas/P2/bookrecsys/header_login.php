@@ -1,9 +1,9 @@
 <header id="cabezera">
   <section class="login">
-    <form method="post" action="login.php">
-      <input class="items" type="text" name="username" value="" placeholder="Usuario" required>
+    <form method="post" onsubmit="return validacionLogin()" action="login.php">
+      <input id="usernamelogin" class="items" type="text" name="username" value="" placeholder="Usuario" required>
       <br>
-      <input class="items" type="password" name="password" value="" placeholder="Contraseña" required>
+      <input id="passlogin" class="items" type="password" name="password" value="" placeholder="Contraseña" required>
       <br>
       <button class="items" type="submit" name="login" formaction="login.php">Acceder</button>
       <br>

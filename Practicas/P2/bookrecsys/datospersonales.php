@@ -11,57 +11,6 @@ echo '
 require('head.php');
 require('header.php');
 
-?>
-
-
- <script type="text/javascript">
-
-   function validacion() {
-
-     img = document.getElementById("imgform").selectedIndex;
-     name = document.getElementById("nameform").value;
-     lastname = document.getElementById("lastnameform").value;
-     mail = document.getElementById("mailform").value;
-     username = document.getElementById("usernameform").value;
-     password = document.getElementById("passform").value;
-
-     if( img == null ) {
-       return false;
-     }
-
-
-     if (name.length > 40) {
-       alert("El nombre no debe contener más de 40 caracteres");
-       return false;
-     }
-
-     if (lastname.length > 40) {
-       alert("El apellido no debe contener más de 40 caracteres");
-       return false;
-     }
-
-     if (mail.length > 50) {
-       alert("El correo no debe contener más de 50 caracteres");
-       return false;
-     }
-
-     if (username.length > 30 || username.length < 8) {
-       alert("El nombre de usuario debe contener entre 8 y 30 caracteres");
-       return false;
-     }
-
-     if (password.length > 30 || password.length < 8) {
-       alert("La contraseña debe contener entre 8 y 30 caracteres");
-       return false;
-     }
-
-     return true;
-
-   }
-
- </script>
-
-<?php
 
 echo '
 <nav id="navbar">
@@ -86,41 +35,60 @@ echo '
 </nav>
 ';
 
+echo'
+  <script>
+    function muestraInfo(){
+      alert("caca");
+    }
+  </script>
+';
+
 $username = $_SESSION['username'];
 
-$sql1 = "SELECT img FROM usuario where username='$username';";
+$sql1 = "SELECT * FROM usuario where username='$username';";
 $result1 =  mysqli_query($conn, $sql1);
 $row1 = mysqli_fetch_assoc($result1);
+
+
+$sql2 = "SELECT id FROM libro_valorado where username='$username';";
+$result2 =  mysqli_query($conn, $sql2);
+
+$titulos = array();
+
+while($row2 = mysqli_fetch_assoc($result2)){
+
+  $id = $row2['id'];
+
+  $sql3 = "SELECT title FROM libro where id='$id';";
+  $result3 =  mysqli_query($conn, $sql3);
+  $row3 = mysqli_fetch_assoc($result3);
+
+  array_push($titulos, $row3['title']);
+}
+
 
 echo '
 <section id="cuerpo">
 
-  <form id="registro" method="post" action="update_profile.php" onsubmit="return validacion();">
+  <form id="registro" method="post" onsubmit="return ValidacionUpdateUsuario()" action="update_profile.php" >
     <h2 style="width: -webkit-fill-available;text-align: -webkit-center;">Editar perfil</h2>
     <section class="izq">
-      <img class="portada" src="'.$row1["img"].'" >
-      <select name="img">
-        <option value="" selected="true" disabled="disabled">Selecciona una foto</option>
-        <option value="perfil1">Perfil 1</option>
-        <option value="perfil2">Perfil 2</option>
-        <option value="perfil3">Perfil 3</option>
-        <option value="perfil4">Perfil 4</option>
-        <option value="perfil5">Perfil 5</option>
-      </select>
+      <img onmouseover="muestraInfo()" class="portada" src="'.$row1["img"].'" >
+
     </section>
 
     <section class="der">
-      <input class="items" type="text" name="name" value="" placeholder="Nombre" maxlength="40">
+      <input id="nameform" class="items" type="text" name="name" value="'.$row1["name"].'" placeholder="Nombre" maxlength="40" >
       <br>
-      <input class="items" type="text" name="lastname" value="" placeholder="Apellidos" maxlength="40">
+      <input id="lastnameform" class="items" type="text" name="lastname" value="'.$row1["lastname"].'" placeholder="Apellidos" maxlength="40" >
       <br>
-      <input class="items" type="text" name="email" value="" placeholder="Correo electronico" maxlength="50">
+      <input id="mailform" class="items" type="text" name="email" value="'.$row1["mail"].'" placeholder="Correo electronico" maxlength="50" >
       <br>
-      <input class="items" type="text" name="username" value="" placeholder="Nombre de usuario" maxlength="30">
+      <input id="usernameform" class="items" type="text" name="username" value="'.$row1["username"].'" placeholder="Nombre de usuario" maxlength="30" >
       <br>
-      <input class="items" type="password" name="password" value="" placeholder="Contraseña" maxlength="30">
+      <input id="passform" class="items" type="password" name="password" value="'.$row1["passwd"].'" placeholder="Contraseña" maxlength="30" >
       <br>
-      <button class="botonregistro" type="submit" name="update" formaction="update_profile.php">Actualizar perfil</button>
+      <button class="botonregistro" type="submit" name="update" >Actualizar perfil</button>
 
     </section>
 

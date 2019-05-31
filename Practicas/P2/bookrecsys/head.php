@@ -6,6 +6,7 @@
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <meta name=”viewport” content=”width=device-width”>
 
+  <script type="text/javascript" src="./scripts.js"></script>
 
   <link rel="stylesheet" href="style.css">
 </head>

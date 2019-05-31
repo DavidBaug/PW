@@ -149,7 +149,7 @@
 
         }else{
           echo '
-          <span title="Necesitas estar logueado para valorar un libro"><a href=#>Valorar libro</a></span>
+          <a href=# onClick="return NoLogueado()">Valorar libro</a>
           ';
         }
 
