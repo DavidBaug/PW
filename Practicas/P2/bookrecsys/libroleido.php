@@ -39,6 +39,85 @@
     </nav>
 
 
+        <script type="text/javascript">
+
+          function validacion() {
+
+            img = document.getElementById("imgform").selectedIndex;
+            title = document.getElementById("titleform").value;
+            autor = document.getElementById("autorform").value;
+            editorial = document.getElementById("editorialform").selectedIndex;
+            anio = document.getElementById("anioform").value;
+            editor = document.getElementById("editorform").value;
+            descripcion = document.getElementById("descripcionform").value;
+            opinion = document.getElementById("opinionform").value;
+            valoracion = document.getElementById("valoracionform").value;
+
+
+            if( img == null ) {
+              alert("Selecciona una imagen");
+              return false;
+            }
+
+            if( editorial == null ) {
+              return false;
+            }
+
+            if( anio < 0 ) {
+              alert("El año debe ser positivo");
+              return false;
+            }
+
+            if (title.length > 60) {
+              alert("El título no debe contener más de 60 caracteres");
+              return false;
+            }
+
+            if (autor.length > 50) {
+              alert("El autor no debe contener más de 50 caracteres");
+              return false;
+            }
+
+            if (editor.length > 50) {
+              alert("El editor no debe contener más de 50 caracteres");
+              return false;
+            }
+
+            if (editorial.length > 30) {
+              return false;
+            }
+
+            if (descripcion.length > 3000) {
+              alert("La descripción no debe contener más de 3000 caracteres");
+              return false;
+            }
+
+            if (opinion.length > 3000) {
+              alert("La opinión no debe contener más de 3000 caracteres");
+              return false;
+            }
+
+            var seleccionado = false;
+            for(var i=0; i<valoraciones.length; i++) {
+              if(valoraciones[i].checked) {
+                seleccionado = true;
+                break;
+              }
+            }
+
+            if(!seleccionado) {
+              alert("Debes valorar el libro")
+              return false;
+            }
+
+            return true;
+          }
+
+
+        </script>
+
+
+
     <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
     <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
     <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
@@ -100,10 +179,10 @@
           <p>'.$row["description"].'</p>
         </section>
 
-        <form class="" action="update_opinion.php?id='.$id.'" method="post">
+        <form class="" action="update_opinion.php?id='.$id.'" method="post" onsubmit="return validacion();">
           <section class="opinion">
             <p>Opinión</p>
-            <textarea name="opinion" rows="8" cols="100" placeholder="'.$row1["opinion"].'"></textarea>
+            <textarea name="opinion" rows="8" cols="100" placeholder="'.$row1["opinion"].'" maxlength="3000"></textarea>
 
           </section>
 
@@ -168,7 +247,6 @@
     require("footer.php");
 
     ?>
-
 
 
 

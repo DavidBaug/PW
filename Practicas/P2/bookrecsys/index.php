@@ -10,14 +10,12 @@ if(!isset($_SESSION["username"])){
   require('head.php');
   require('header_login.php');
   require('navbar_login.php');
-  require('html/index.html');
+  require('getlibros.php');
   require('footer.php');
 
   echo '</html>';
 
 }else {
-  $message = "Sesión abierta";
-  echo "<script type='text/javascript'>alert('$message');</script>";
 
   echo '
   <html lang="es" dir="ltr">
@@ -50,8 +48,7 @@ echo '
     </nav>
   ';
 
-
-  require('html/index.html');
+  require('getlibros.php');
   require('footer.php');
 
   echo '</html>';
