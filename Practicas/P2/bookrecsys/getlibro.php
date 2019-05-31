@@ -146,9 +146,10 @@
               <a href="valoracion_libro.php?id='.$id.'">Valorar libro</a>
             ';
           }
+
         }else{
           echo '
-            <a href=# onClick="alert("Debes estar logueado para valorar un libro")">Valorar libro</a>
+          <span title="Necesitas estar logueado para valorar un libro"><a href=#>Valorar libro</a></span>
           ';
         }
 
