@@ -112,10 +112,3 @@ function ValidacionAlta() {
 function NoLogueado(){
   alert("Para acceder a esta función necesitas estar logueado :(");
 }
-
-
-function PintaLibros(titulos){
-
-
-
-}

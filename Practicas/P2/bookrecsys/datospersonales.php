@@ -21,7 +21,7 @@ echo '
     <li><a href="mislibros.php">Mis libros</a></li>
     <li><a href="foro.php">Foro</a></li>
     <li><a class="active" href="datospersonales.php">Mis datos</a></li>
-    <li><a href="recomendaciones_u1.php">Mis recomendaciones</a></li>
+    <li><a href="recomendaciones.php">Mis recomendaciones</a></li>
     <li><a class="exit" style="background-color: red;" href="logout.php">Cerrar sesión</a></li>
   </ul>
 
@@ -29,19 +29,12 @@ echo '
     <li><a href="mislibros.php">Mis libros</a></li>
     <li><a href="foro.php">Foro</a></li>
     <li><a class="active" href="datospersonales.php">Mis datos</a></li>
-    <li><a href="recomendaciones_u1.php">Mis recomendaciones</a></li>
+    <li><a href="recomendaciones.php">Mis recomendaciones</a></li>
     <li><a href="#"></a></li>
   </ul>
 </nav>
 ';
 
-echo'
-  <script>
-    function muestraInfo(){
-      alert("caca");
-    }
-  </script>
-';
 
 $username = $_SESSION['username'];
 
@@ -66,6 +59,8 @@ while($row2 = mysqli_fetch_assoc($result2)){
   array_push($titulos, $row3['title']);
 }
 
+$aux = json_encode($titulos);
+$aux_user = json_encode($username);
 
 echo '
 <section id="cuerpo">
@@ -73,7 +68,7 @@ echo '
   <form id="registro" method="post" onsubmit="return ValidacionUpdateUsuario()" action="update_profile.php" >
     <h2 style="width: -webkit-fill-available;text-align: -webkit-center;">Editar perfil</h2>
     <section class="izq">
-      <img onmouseover="muestraInfo()" class="portada" src="'.$row1["img"].'" >
+      <img onmouseover="return PintaLibros();" class="portada" src="'.$row1["img"].'">
 
     </section>
 
@@ -105,3 +100,20 @@ require('footer.php');
 echo '</html>';
 
  ?>
+
+ <script>
+  function PintaLibros(){
+
+    var titulos = JSON.parse('<?= $aux; ?>');
+    var user = JSON.parse('<?= $aux_user; ?>');
+
+    var msg =" - " + titulos[0] + '\n';
+
+    for (var i = 1; i < titulos.length; i++) {
+      msg = msg + " - " +  titulos[i] + '\n';
+    }
+
+    alert(user + " ha subido los siguientes libros: \n\n" + msg);
+
+  }
+ </script>
