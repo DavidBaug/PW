@@ -79,9 +79,9 @@ echo '
       <br>
       <input id="mailform" class="items" type="text" name="email" value="'.$row1["mail"].'" placeholder="Correo electronico" maxlength="50" >
       <br>
-      <input id="usernameform" class="items" type="text" name="username" value="'.$row1["username"].'" placeholder="Nombre de usuario" maxlength="30" >
+      <input id="usernameform" class="items" type="text" name="username" value="'.$row1["username"].'" placeholder="Nombre de usuario"  minlength="8" maxlength="30" >
       <br>
-      <input id="passform" class="items" type="password" name="password" value="'.$row1["passwd"].'" placeholder="Contraseña" maxlength="30" >
+      <input id="passform" class="items" type="password" name="password" value="'.$row1["passwd"].'" placeholder="Contraseña"  minlength="8" maxlength="30" >
       <br>
       <button class="botonregistro" type="submit" name="update" >Actualizar perfil</button>
 

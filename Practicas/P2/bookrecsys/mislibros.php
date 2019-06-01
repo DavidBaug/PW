@@ -111,34 +111,22 @@
         <ul class="lista">
           <?php
 
-            $sql = "SELECT id FROM libro_valorado;";
+            $sql = "SELECT * FROM libro;";
 
             $result =  mysqli_query($conn, $sql);
 
-            // Mostrar no repes
-            $mostrados = array();
-
             if (mysqli_num_rows($result) > 0) {
-                while($row = mysqli_fetch_assoc($result)) {
-
+              while($row = mysqli_fetch_assoc($result)) {
                   $id = $row["id"];
 
-                  if (!in_array($id, $mostrados)) {
-                    array_push($mostrados, $id);
+                  echo '
+                  <li class="item">
+                    <a href="libro.php?id='.$id.'"><h4 class="titulo">'. $row["title"].'</h4></a>
+                    <p class="autor">'. $row["autor"].'</p>
+                  </li>
 
-                    $sql1 = "SELECT title,autor FROM libro where id='$id';";
-                    $result1 =  mysqli_query($conn, $sql1);
-                    $row1 = mysqli_fetch_assoc($result1);
-
-                    echo '
-                    <li class="item">
-                      <a href="libro.php?id='.$id.'"><h4 class="titulo">'. $row1["title"].'</h4></a>
-                      <p class="autor">'. $row1["autor"].'</p>
-                    </li>
-
-                    <hr>
-                    ';
-                  }
+                  <hr>
+                  ';
                 }
             } else {
                 echo "<p>No hay libros valorados</p>";

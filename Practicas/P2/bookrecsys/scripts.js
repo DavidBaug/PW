@@ -6,14 +6,14 @@ function ValidacionLogin(){
   if (pass.value == "")
   {
       window.alert("Por favor, introduce tu contraseña.");
-      pass.focus();
+      // pass.focus();
       return false;
   }
 
   if (username.value == "")
   {
       window.alert("Por favor introduce tu username.");
-      username.focus();
+      // username.focus();
       return false;
   }
 
@@ -28,37 +28,53 @@ function ValidacionUpdateUsuario() {
   var username = document.getElementById("usernameform").value;
   var password = document.getElementById("passform").value;
 
+  var ok = true;
+
+
   if (name.length > 40) {
     window.alert("El nombre no debe contener más de 40 caracteres");
-    name.focus();
-    return false;
+    // name.focus();
+    ok = false;
   }
 
   if (lastname.length > 40) {
     window.alert("El apellido no debe contener más de 40 caracteres");
-    lastname.focus();
-    return false;
+    // lastname.focus();
+    ok = false;
   }
 
-  if (mail.length > 50) {
+  if (mail.length > 50 ) {
     window.alert("El correo no debe contener más de 50 caracteres");
-    mail.focus();
-    return false;
+    // mail.focus();
+    ok = false;
   }
+
+
+  if (!(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail))) {
+    window.alert("Introduce un correo válido");
+
+    ok = false;
+
+  }
+
 
   if (username.length > 30 || username.length < 8) {
     window.alert("El nombre de usuario debe contener entre 8 y 30 caracteres");
-    username.focus();
-    return false;
+    // username.focus();
+    ok = false;
   }
 
   if (password.length > 30 || password.length < 8) {
     window.alert("La contraseña debe contener entre 8 y 30 caracteres");
-    password.focus();
-    return false;
+    // password.focus();
+    ok = false;
   }
 
-  window.alert("Datos cambiados");
+  if (ok) {
+    window.alert("Datos cambiados");
+  }
+
+  return ok;
 
 
 }
